@@ -4,63 +4,71 @@
 Todo list:
 
 Make it work with numbers higher than 511 and lower than -511
-Make it work with negative numbers without a whole number(ex. -0.028)
+Make -0 work damn it
+Busca ADDBITS para encontrar las lineas que necesitan cambio
+
 */
 
 // global variables
-$numUsuario = 0;
-$ieeeSigno = 0;
-$ieeeExponente = 0;
-$ieeeEntero = 0;
-$ieeeMantisa = 0;
-$tmpNum = 0;
-$tmpLista = 0;
-$goNegativeZero = 0; // test this...
+$numUsuario = 0; // el numero que el usuario entra
+$bitsUsuario = 0;
+$ieeeSigno = 0; // el bit asignado para la representacion del signo (+,-)
+$ieeeExponente = 0; // los bits asignados para la representacion del exponente
+$ieeeEntero = 0; // variable creada para facilitar conversiones y algoritmos
+$ieeeMantisa = 0; // los bits asignados para la representacion de la mantisa
+$tmpNum = 0; // variable que contiene el valor absoluto de $numUsuario
 
-// funcion para convertir un numero entero positivo a un numero binario
-function convertir($convertirNum) //los argumentos: el numero que deseamos convertir a binario
+
+// funcion para convertir un numero entero positivo a un numero binario (base 10 a base 2)
+
+function convertir($convertirNum) // los argumentos: el numero que deseamos convertir a binario
 {
-	$listaBinaria[] = (int)($convertirNum % 2); //los valores de la lista son residuos de el numero escojido entre 2
-	$cociente = floor($convertirNum / 2); //$cociente siempre contiene el resultado de la division mas reciente
+	$listaBinaria[] = (int)($convertirNum % 2); // los valores de la lista son residuos de el numero escojido entre 2
+	$cociente = floor($convertirNum / 2); // $cociente siempre contiene el resultado de la division mas reciente
 	
-	while ($cociente != 1) //mientras $cociente no sea 1, todavia se puede achicar mas con division
+	while ($cociente != 1) // mientras $cociente no sea 1, todavia se puede achicar mas con division
 		{ 
-		$listaBinaria[] = (int)($cociente % 2); //continuar llenando la lista binaria
-		$cociente = floor($cociente / 2); //continuar dividiendo aun mas
+		$listaBinaria[] = (int)($cociente % 2); // continuar llenando la lista binaria
+		$cociente = floor($cociente / 2); // continuar dividiendo aun mas
 		} 
 		
-	$listaBinaria[] = $cociente % 2; //luego de que $cociente sea 1, solo necesitamos un residuo mas
+	$listaBinaria[] = $cociente % 2; // luego de que $cociente sea 1, solo necesitamos un residuo mas
 
-	//mientras no hayan 4 digitos en la lista binaria, add 0s
+	$listaBinariaReversed = array_reverse($listaBinaria); // invertir la lista original (ir de atras hacia alfrente)
 
-
-	$listaBinariaReversed = array_reverse($listaBinaria);
-	while (count($listaBinariaReversed) < 5)
+	// mientras no hayan digitos suficentes (determinados por los bits que se estan trabajando) en la lista binaria, crear mas 0s
+	while (count($listaBinariaReversed) < 5) // ADDBITS
 	{
-		array_unshift($listaBinariaReversed, 0);
+		array_unshift($listaBinariaReversed, 0); // este codigo crea un numero "0" en la lista, siempre en el indice [0]
 	}
-	return $listaBinariaReversed;
+
+	return $listaBinariaReversed; // devolvemos el numero en el orden correcto y con suficientes bits
 }
 
-function mult_whole($parteDecimalFunc, $veces)
+function mult_mantisa($parteDecimalFunc, $veces) // los argumentos: la parte decimal del numero que el usuario entro, cuantas veces necesita ser multiplicado
 {
-	$i = 0;
-	if ($veces != 0)
+	$i = 0; // contador
+	if ($veces != 0) // si se necesita multiplicar por lo menos 1 vez...
 	{
-		while ($i < $veces)
+		while ($i < $veces) // mientras el contador sea menor que las veces...
 		{	
-			$parteDecimalFunc = $parteDecimalFunc * 2;
-			$tmpLista[] = floor($parteDecimalFunc);
-			if (floor($parteDecimalFunc) == 1)
+			$parteDecimalFunc = $parteDecimalFunc * 2; // multiplicar por dos
+			$tmpLista[] = floor($parteDecimalFunc); // añadir el primer digito a la lista
+			if (floor($parteDecimalFunc) == 1) // si el primer digito es "1"
 			{
-				$parteDecimalFunc = $parteDecimalFunc - 1;
+				$parteDecimalFunc = $parteDecimalFunc - 1; // eliminar el "1" para continuar con la parte decimal
 			}
-			$i++;
+
+			$i++; // incrementar el contador
 		}
 	}
 	
-	return $tmpLista;
+	return $tmpLista; // devolvemos la lista que contiene la ultima parte de $ieeeMantisa
 }
+
+// esta funcion es utilizada cuando no hay un digito en la parte entera del numero que el usuario entra
+// intenta encontrar la primera vez que una multiplicacion por 2 lleva a una parte entera
+// todo mientras guarda cuenta de cuantas multiplicaciones fueron necesarias para llegar a ese primer "1"
 
 function find_first_one($numeroDecimal)
 {
@@ -75,13 +83,17 @@ function find_first_one($numeroDecimal)
 	return $counter;
 }
 
+// esta funcion es llamada cuando ya tenemos los valores de $ieeeSigno, $ieeeExponente y $ieeeMantisa
+// es la funcion final; la que despliega el resultado de las funciones previas
+
 function done_computing()
 {
 	global $numUsuario, $ieeeExponente, $ieeeSigno, $ieeeMantisa;
 
 	// resultados! (de un numero negativo y con numero entero!)
-	echo "\n--------------------\n";
-	echo $numUsuario." en IEEE 754 binary16 es: ".$ieeeSigno."|";
+	echo "\n--------------------\n"; // por cuestiones de estetica
+
+	echo $numUsuario." en IEEE 754 binary$bitsUsuario es: ".$ieeeSigno."|";
 	foreach($ieeeExponente as $bits){
 		echo $bits;
 	}
@@ -91,23 +103,42 @@ function done_computing()
 		echo $bits;
 	}
 
-	echo "\n--------------------\n";
+	// lo mismo que el bloque de codigo anterior, pero ahora sin los "|" entre las variables
+	// esto es util para "copy-paste" el numero y probarlo en mi segundo programa, el convertidor de IEEE754 a base 10
+	echo "\nForma alterna para utilizar en el re-convertidor: ";
+	echo $ieeeSigno;
+	foreach($ieeeExponente as $bits){
+		echo $bits;
+	}
+	foreach($ieeeMantisa as $bits){
+		echo $bits;
+	}
+
+	echo "\n--------------------\n"; // por cuestiones de estetica
 
 }
 
-function done_computing_zero($signo)
+/// FIX ///
+function done_computing_zero()
 {	
-	if ($signo == 1)
-	{
-		echo "0 en IEEE 754 es: 1|00000|0000000000";
-	}
+	global $numUsuario, $bitsUsuario;
 
-	else 
-	{
-		echo "0 en IEEE 754 es: 0|00000|0000000000";
-	}
+	$drainZeros = 0;
+
+	if ($bitsUsuario == 16)
+		{
+			$exponente = 5;
+			$mantisa = 10;
+		}
+
+	if (abs($numUsuario == 0){$signo = 0;}
+	elseif (floor($numUsuario + 0.1) == -1)){$signo = 1;}
+
+	echo "$numUsuario en IEEE 754 binary$bitsUsuario es: $signo|";
 	
 }
+
+/// ///
 
 // Preliminary user interface ----------------------------------------- PROGRAM STARTS HERE
 echo "Dame un numero: ";
@@ -118,29 +149,27 @@ if (is_numeric($numUsuario) == False)
 	echo "Por favor entra un valor numerico.\n";
 }
 
-// Aqui verificamos si el numero es muy grande o muy small
+// Aqui verificamos si el numero es muy grande o muy pequeño
 elseif ($numUsuario > 65504 or $numUsuario < -65504)
 {
 	echo "Su numero esta fuera del rango acceptable.\n";
 }
 
 // Aqui hacemos trampa y sacamos el 0 positivo y el 0 negativo fuera de las ecuaciones
-elseif ($numUsuario == 0)
+elseif (abs($num == 0))
 {
-	done_computing_zero(0);
+	done_computing_zero();
 }
 
-elseif ($numUsuario == -0)
-{
-	done_computing_zero(1);
 }
 // 
 
 // ----------------------------------- SI hay una parte entera en el numero del usuario -----------------------------------
-elseif (abs(floor($numUsuario)) != 0)
+elseif (abs(round($numUsuario, 0, PHP_ROUND_HALF_DOWN)) != 0)
 {
+
 	// Aqui verificamos si el numero es negativo o positivo
-	if ($numUsuario < 0){$ieeeSigno = 1;}	
+	if ($numUsuario < 0){$ieeeSigno = 1;}
 	elseif ($numUsuario > 0){$ieeeSigno = 0;}
 	else {echo "\nError: El numero no es ni positivo ni negativo...\n";}
 	//
@@ -171,7 +200,7 @@ elseif (abs(floor($numUsuario)) != 0)
 	if (count($ieeeEntero) < 10)
 	{
 		// necesitamos llenar la mantisa a 10 espacios
-		$ieeeMantisa = mult_whole(($tmpNum - floor($tmpNum)), 10 - $movidasDelPunto);			
+		$ieeeMantisa = mult_mantisa(($tmpNum - floor($tmpNum)), 10 - $movidasDelPunto);			
 	}
 
 
@@ -182,7 +211,8 @@ elseif (abs(floor($numUsuario)) != 0)
 }
 
 // ----------------------------------- NO hay una parte entera en el numero del usuario -----------------------------------
-elseif (abs(floor($numUsuario)) == 0)
+elseif (abs(round($numUsuario, 0, PHP_ROUND_HALF_DOWN)) == 0)
+
 {	
 	// Aqui verificamos si el numero es negativo o positivo
 	if ($numUsuario < 0){$ieeeSigno = 1;}	
@@ -196,9 +226,7 @@ elseif (abs(floor($numUsuario)) == 0)
 	$primerUno = find_first_one($tmpNum);
 
 	// llenamos la mantisa con $veces = 10 + cuantas veces fueron necesarias para llegar al primer uno (ya que este sera elimindado...)
-	$ieeeMantisa = mult_whole($tmpNum, 10 + $primerUno);
-
-	echo "ieeeMantisa es: "; foreach($ieeeMantisa as $bits) echo $bits; echo "\n"; // debug
+	$ieeeMantisa = mult_mantisa($tmpNum, 10 + $primerUno);
 
 	// con esto, "corremos" el 1 (en realidad eliminamos el uno y creamos una lista nueva sin el)
 	$ieeeMantisa = array_slice($ieeeMantisa, $primerUno);

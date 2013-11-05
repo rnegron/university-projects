@@ -4,9 +4,8 @@
 Todo list:
 
 Make it work with binary32 and binary64 (the framework is there I believe)
-
-
 */
+
 
 
 $startLoopBits = True;
@@ -21,7 +20,7 @@ $ieeeMantisa = 0;
 function base2_a_base10($numeroBinario)
 {	
 	$numeroBinario = (int)$numeroBinario;
-	return base_convert($numeroBinario, 2, 10); // PLACEHOLDER LOL
+	return base_convert($numeroBinario, 2, 10); // PLACEHOLDER
 }
 
 function string_check($stringNumero)
@@ -31,11 +30,7 @@ function string_check($stringNumero)
 	foreach($testArray as $char)
 	{
 		$char = (int)$char;
-		if ($char == 1 or $char == 0)
-		{
-			echo "\nPass!"; // debug
-		}
-		else
+		if ($char != 1 and $char != 0)
 		{
 			return "Error";
 		}
@@ -59,12 +54,13 @@ function list_work($listaNumeroVerificado)
 		{
 			$exponenteString = $exponenteString.$bit;
 		}
-		echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
+		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
 		$exponente = base2_a_base10($exponenteString); 
-		echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
+		// echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
 		$ieeeExponente = $exponente - 15;
-		echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
+		// echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
 
+		// this can be in a function! the whole next parts
 		$mantisa = array_slice($listaNumeroVerificado, 6, 17);
 		
 		$i = 1;
@@ -76,7 +72,6 @@ function list_work($listaNumeroVerificado)
 			{
 				$sum += pow(2, -$i);
 			}
-
 			$i++;
 		}
 
@@ -98,12 +93,13 @@ function list_work($listaNumeroVerificado)
 		{
 			$exponenteString = $exponenteString.$bit;
 		}
-		echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
+		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
 		$exponente = base2_a_base10($exponenteString); 
-		echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
+		// echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
 		$ieeeExponente = $exponente - 127;
-		echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
+		// echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
 
+		// this can be in a function!
 		$mantisa = array_slice($listaNumeroVerificado, 9, 33);
 
 		$i = 1;
@@ -137,11 +133,34 @@ function list_work($listaNumeroVerificado)
 		{
 			$exponenteString = $exponenteString.$bit;
 		}
-		echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
+		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
 		$exponente = base2_a_base10($exponenteString); 
-		echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
+		// echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
 		$ieeeExponente = $exponente - 1023;
-		echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
+		// echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
+
+		// this can be in a function!
+		$mantisa = array_slice($listaNumeroVerificado, 12, 53);
+
+		$i = 1;
+		$sum = 0;
+			
+		foreach($mantisa as $bit)
+		{
+			if ($bit == 1)
+			{
+				$sum += pow(2, -$i);
+			}
+			$i++;
+		}
+
+		// implicit
+		$sum += 1;
+
+		$sum *= pow(2, $ieeeExponente);
+		$ieeeMantisa = $sum;
+
+		done_computing();
 	}
 
 }
@@ -199,5 +218,6 @@ function go_start()
 }
 
 go_start();
+echo "\n-Programa llego al final del codigo-\n"; 
 
 ?>
