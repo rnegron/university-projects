@@ -7,7 +7,6 @@ Make it work with binary32 and binary64 (the framework is there I believe)
 */
 
 
-
 $startLoopBits = True;
 $startLoopNum = True;
 
@@ -17,11 +16,6 @@ $ieeeSigno = 1;
 $ieeeExponente = 0;
 $ieeeMantisa = 0;
 
-function base2_a_base10($numeroBinario)
-{	
-	$numeroBinario = (int)$numeroBinario;
-	return base_convert($numeroBinario, 2, 10); // PLACEHOLDER
-}
 
 function string_check($stringNumero)
 {
@@ -39,6 +33,24 @@ function string_check($stringNumero)
 	list_work($testArray);
 }
 
+function base2_a_base10($numeroBinario)
+{	
+	$numeroBinario = array_reverse($numeroBinario);
+	$numeroEnBase10 = 0;
+	$i = 1;	
+
+	foreach($numeroBinario as $bit)
+	{
+		if ($bit == "1")
+		{
+			$numeroEnBase10 += pow(2, $i);
+		}
+		$i++;
+	}
+
+	return $numeroEnBase10 / 2;
+}
+
 function list_work($listaNumeroVerificado)
 {	
 	global $ieeeSigno, $ieeeExponente, $ieeeMantisa, $bitsUsuario;
@@ -49,13 +61,8 @@ function list_work($listaNumeroVerificado)
 	if ($bitsUsuario == 16)
 	{	
 		$exponente = array_slice($listaNumeroVerificado, 1, 5);
-		$exponenteString = "";
-		foreach ($exponente as $bit)
-		{
-			$exponenteString = $exponenteString.$bit;
-		}
 		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
-		$exponente = base2_a_base10($exponenteString); 
+		$exponente = base2_a_base10($exponente); 
 		// echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
 		$ieeeExponente = $exponente - 15;
 		// echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
@@ -88,13 +95,7 @@ function list_work($listaNumeroVerificado)
 	elseif ($bitsUsuario == 32)
 	{
 		$exponente = array_slice($listaNumeroVerificado, 1, 8);
-		$exponenteString = "";
-		foreach ($exponente as $bit)
-		{
-			$exponenteString = $exponenteString.$bit;
-		}
-		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
-		$exponente = base2_a_base10($exponenteString); 
+		$exponente = base2_a_base10($exponente);
 		// echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
 		$ieeeExponente = $exponente - 127;
 		// echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
@@ -128,13 +129,8 @@ function list_work($listaNumeroVerificado)
 	elseif ($bitsUsuario == 64)
 	{
 		$exponente = array_slice($listaNumeroVerificado, 1, 11);
-		$exponenteString = "";
-		foreach ($exponente as $bit)
-		{
-			$exponenteString = $exponenteString.$bit;
-		}
-		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug
-		$exponente = base2_a_base10($exponenteString); 
+		$exponente = base2_a_base10($exponente);
+		// echo "\nel array slice del exponente dio: ".$exponenteString."\n"; // debug 
 		// echo "\nLa conversion a base 10 fue: ".$exponente."\n"; // debug
 		$ieeeExponente = $exponente - 1023;
 		// echo "\nLuego de quitar el bias, el exponente dio: ".$ieeeExponente."\n"; // debug
