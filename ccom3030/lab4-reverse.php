@@ -3,18 +3,18 @@
 /*
 Todo list:
 
-Make it work with binary32 and binary64 (the framework is there I believe)
+From line 61 onwards, the calculations can be in a separete function (call it final_calc)
+Apply styling guide
+Comment the code
 */
 
 
-$startLoopBits = True;
-$startLoopNum = True;
-
-$bitsUsuario = 0;
-
-$ieeeSigno = 1;
-$ieeeExponente = 0;
-$ieeeMantisa = 0;
+$startLoopBits  = True;
+$startLoopNum   = True;
+$bitsUsuario    = 0;
+$ieeeSigno      = 1;
+$ieeeExponente  = 0;
+$ieeeMantisa    = 0;
 
 
 function string_check($stringNumero)
