@@ -1,10 +1,35 @@
 <?php
-
 /*	
+Raul Negron Otero 801-13-4680
+Programa: lab4.php
 
-This program follows the PEAR coding standards for PHP (pear.php.net/manual/en/standards.php)
+Este programa le pide un numero al usuario (en base 10). Verifica que lo entrado sea un valor numérico.
+También pide la cantidad de bits y verifica si es un valor numérico y si es 16, 32 o 64. Luego comienza a encontrar
+el valor del signo, el exponente y la mantisa del número convertido a binario en IEEE754 estándar. 
 
-TODO restrict the range
+$numUsuario = contiene el valor numérico que el usuario quiere convertir hacia IEEE754
+$bitsUsuario = contiene el valor numérico que representa la precisión deseada por el usuario
+$ieeeSigno = contiene un solo digito, 0 o 1, que simboliza el signo positivo o negativo en IEEE754
+$ieeeExponente = contiene una lista de dígitos que representan el exponente del número en IEEE754
+$ieeeMantisa = contiene una lista de dígitos que contienen la precisión del número decimal
+$largoExponenteUsuario = dependiendo de los bits, existe un límite para el largo del exponente en una lista
+$largoMantisaUsuario = dependiendo de los bits, existe un límite para el largo de la mantisa en una lista
+$biasUsuario = dependiendo de los bits, se le aplica un bias al exponente del número convertido
+
+$convertirNum = contiene el número que va a ser convertido a binario
+$listaBinaria = lista que contiene el número convertido a binario
+$cociente = siempre almacena el resultado más reciente de una división entre 2
+$numeroDecimal = contiene, si existe, la parte decimal de $tmpNum
+$veces = un valor numérico que representa las veces que son deseadas multiplicar por 2
+$tmpLista = lista que contiene solo 0s y 1s, productos de multiplicación por 2 varias veces
+$counter = un iterador, va creciendo con un loop
+$i = igual que $counter
+$tmpNum = es el valor absoluto e $numUsuario, luego de que pase por verificación
+$enteroEnBin = es la conversión de la parte entera de $tmpNum en binario (base 2)
+$extraMantisa = si la mantisa era mas pequena que $largoMantisaUsuario, esta lista contiene valores extra para completarla
+
+TODO restrict the range, especially in the exponent getting too many digits
+	 remove the debug code...
 
 */
 
@@ -20,36 +45,41 @@ $biasUsuario             = 0;
 
 // Esta funcion convierte un numero en base 10 a un numero en base 2
 function convertir($convertirNum) // los argumentos: el numero que deseamos convertir a binario
-{
+{	
 
+	if (abs($convertirNum) == 1) { // si el numero de input es 1 o -1, lo trabajamos aqui para evitar errores mas adelante
+		$listaBinaria[] = 1;
+		return $listaBinaria;
+	} 
 	$listaBinaria[] = (int)($convertirNum % 2); // los valores de la lista son residuos de el numero escojido entre 2
 	$cociente = floor($convertirNum / 2); // $cociente siempre contiene el resultado de la division mas reciente
 	
 	while ($cociente != 1) { // mientras $cociente no sea 1, todavia se puede achicar mas con division
-		$listaBinaria[]   = (int)($cociente % 2); // continuar llenando la lista binaria
-		$cociente         = floor($cociente / 2); // continuar dividiendo aun mas 
-
-	} $listaBinaria[]     = $cociente % 2; // luego de que $cociente sea 1, solo necesitamos un residuo mas
+		$listaBinaria[] = (int)($cociente % 2); // continuar llenando la lista binaria
+		$cociente = floor($cociente / 2); // continuar dividiendo aun mas 
+	} 
+	
+	$listaBinaria[] = $cociente % 2; // luego de que $cociente sea 1, solo necesitamos un residuo mas
 
 	$listaBinariaReversed = array_reverse($listaBinaria); // invertir la lista original (ir de atras hacia alfrente)
 
-	return $listaBinariaReversed; // devolvemos el numero en el orden correcto y con suficientes bits
+	return $listaBinariaReversed; // devolvemos el numero en el orden correcto
 }
 
 // Esta funcion fue creada para multiplicar por 2 y guardar el resultado en una lista una cierta cantidad de veces
-function multMantisa($parteDecimalFunc, $veces) // los argumentos: la parte decimal del numero que el usuario entro, cuantas veces necesita ser multiplicado
+function multMantisa($numeroDecimal, $veces) // los argumentos: la parte decimal del numero que el usuario entro, cuantas veces necesita ser multiplicado
 {
 	$i = 0; // contador
 	if ($veces != 0) { // si se necesita multiplicar por lo menos 1 vez...
 	
 		while ($i < $veces) { // mientras el contador sea menor que las veces...
 			
-			$parteDecimalFunc = $parteDecimalFunc * 2; // multiplicar por dos
-			$tmpLista[] = floor($parteDecimalFunc); // añadir el primer digito a la lista
+			$numeroDecimal = $numeroDecimal * 2; // multiplicar por dos
+			$tmpLista[] = floor($numeroDecimal); // añadir el primer digito a la lista
 
-			if (floor($parteDecimalFunc) == 1) { // si el primer digito es "1"
+			if (floor($numeroDecimal) == 1) { // si el primer digito es "1"
 			
-				$parteDecimalFunc = $parteDecimalFunc - 1; // eliminar el "1" para continuar con la parte decimal
+				$numeroDecimal = $numeroDecimal - 1; // eliminar el "1" para continuar con la parte decimal
 			}
 			$i++; // incrementar el contador
 		}
@@ -140,7 +170,7 @@ function doneComputingZero()
 	} echo "\n"; 
 }
 
-// en esta funcion trabajamos el aspecto interactivo. Aqui recojemos los parametros necesarios para la conversion
+// en esta funcion trabajamos el aspecto interactivo. Aqui recojemos los parametros necesarios para la conversion y calculamos la mayoria de las variables
 function goStart()
 {
 	global $bitsUsuario, $numUsuario, $ieeeSigno, $ieeeExponente, $ieeeMantisa, $biasUsuario, $largoExponenteUsuario, $largoMantisaUsuario;
@@ -150,7 +180,7 @@ function goStart()
 
 	if (is_numeric($numUsuario) == False) { // si el valor entrado por el usuario no es un numero, dejarle saber y re-empezar la funcion
 
-		echo "Por favor entra un valor numerico.\n\n";
+		echo "Por favor entra un valor numérico.\n\n";
 		$numUsuario  = 0;
 		goStart();
 	}
@@ -159,24 +189,39 @@ function goStart()
 	$bitsUsuario = trim(fgets(STDIN)); // guardar el valor entrado en la variable $bitsUsuario
 
 
-	if (is_numeric($bitsUsuario) == False) // si el valor entrado por el usuario no es un numero, dejarle saber y re-empezar la funcion
-	{
-		echo "Por favor entra un valor numerico.\n\n";
+	if (is_numeric($bitsUsuario) == False) { // si el valor entrado por el usuario no es un numero, dejarle saber y re-empezar la funcion
+		echo "Por favor entra un valor numérico.\n\n";
 		$bitsUsuario = 0;
 		$numUsuario  = 0;
 		goStart();
-	}
 
-	elseif ($bitsUsuario != 16 and $bitsUsuario != 32 and $bitsUsuario != 64) // si el usuario escojio bits que no son 16, 32 o 64, dejarle saber y re-empezar
-	{
+	} elseif ($bitsUsuario != 16 and $bitsUsuario != 32 and $bitsUsuario != 64) { // si el usuario escojio bits que no son 16, 32 o 64, dejarle saber y re-empezar
 		echo "Por favor entre solo 16, 32 o 64.\n\n";
 		$numUsuario  = 0;
 		$bitsUsuario = 0;
 		goStart();
 	}
 
+	if ($bitsUsuario == 16 and ($numUsuario > 65504 or $numUsuario < -65504)) { 
+		echo "Su numero esta fuera de rango.\n\n";
+		$bitsUsuario = 0;
+		$numUsuario = 0;
+		goStart();
+
+	} elseif ($bitsUsuario == 32 and ($numUsuario > 3.4028234663853E+38 or $numUsuario < -3.4028234663853E+38)) {
+		echo "Su numero esta fuera de rango.\n\n";
+		$bitsUsuario = 0;
+		$numUsuario = 0;
+		goStart();
+
+	} elseif ($bitsUsuario == 64 and ($numUsuario > 1.7976931348623E+308 or $numUsuario < -1.7976931348623E+308)) {
+		echo "Su numero esta fuera de rango.\n\n";
+		$bitsUsuario = 0;
+		$numUsuario = 0;
+		goStart();
+	
 	// desde aqui comenzamos a trabajar el numero
-	elseif ($numUsuario < 0) { // si el numero es menor que 0 (negativo), entonces el primer digito de la representacion IEEE754 sera [1]
+	} elseif ($numUsuario < 0) { // si el numero es menor que 0 (negativo), entonces el primer digito de la representacion IEEE754 sera [1]
 		$ieeeSigno = 1;
 
 	} else { // si el numero es mayor que 0 (positivo), entonces el primer digito de la representacion IEEE754 sera [0]
@@ -187,33 +232,42 @@ function goStart()
 
 	// ----------------------------------- SI hay una parte entera en el numero del usuario -----------------------------------
 	if (floor($tmpNum) != 0)
-	{
-		bitWork($bitsUsuario); // llamamos a una funcion que va a organizar ciertas variables globales que dependen de la cantidad de bits que el usuario quiere
-
-		$enteroEnBin = convertir(floor($tmpNum)); // con esto, convertimos la parte entera (usando floor()) del numero entrado a binario
-
-		$ieeeExponente = count($enteroEnBin) - 1; // el exponente sera el largo de la lista creada - 1
-
-		if (count($enteroEnBin) >= $largoMantisaUsuario) { // si el largo de la lista ya se pasa del largo de la mantisa (depende de los bits)...
-			// pues la mantisa puede ser esa misma lista, pero desde el indice 0 hasta el esperado largo de la mantisa (depende de los bits)
-			$ieeeMantisa = array_slice($enteroEnBin, 0, $largoMantisaUsuario);
-
-		} else { // pero si la lista todavia no se pasa, pues la mantisa comienza desde el indice [largo de la lista previa - exponente]
+	{	
 		
-			$ieeeMantisa = array_slice( $enteroEnBin,  // primer argumento: la lista del numero entero convertido a binario
+		bitWork($bitsUsuario); // llamamos a una funcion que va a organizar ciertas variables globales que dependen de la cantidad de bits que el usuario quiere
+		$enteroEnBin = convertir(floor($tmpNum)); // con esto, convertimos la parte entera (usando floor()) del numero entrado a binario
+		echo "enteroEnBin es: "; // DEBUG
+		foreach ($enteroEnBin as $bits) {echo $bits;}
+		echo "\n";
+		$ieeeExponente = count($enteroEnBin) - 1; // el exponente sera el largo de la lista creada - 1
+		echo "ieeeExponente es $ieeeExponente\n"; // DEBUG
+
+		// la mantisa comienza desde el indice [largo de la lista previa - exponente]
+		$ieeeMantisa = array_slice($enteroEnBin,  // primer argumento: la lista del numero entero convertido a binario
 				count($enteroEnBin) - $ieeeExponente); // segundo argumento: el largo de esa lista menos el valor del exponente
-		}
 
 		$ieeeExponente = convertir($ieeeExponente + $biasUsuario); // ya terminamos de utilizar el exponente como tipo int, ahora lo convertimos a binario
+		echo "ieeeExponente luego de la conversion es: "; // DEBUG
+		foreach ($ieeeExponente as $bits) {echo $bits;}
+		echo "\n";
 
 		if (count($ieeeExponente < $largoExponenteUsuario)) { // si el exponente (en binario) es muy corto (depende de los bits)...
 
-			while (count($ieeeExponente) < $largoExponenteUsuario) {array_unshift($ieeeExponente, 0);} 
-		
-		} if (count($ieeeMantisa) < $largoMantisaUsuario) {
+			while (count($ieeeExponente) < $largoExponenteUsuario) { // mientras el exponente sea muy corto...
+				array_unshift($ieeeExponente, 0); // le ponemos un 0 en el indice [0] (el primero)
+			} 
 
-			$extraMantisa = multMantisa($tmpNum - floor($tmpNum), $largoMantisaUsuario - count($ieeeMantisa)); 
-			$ieeeMantisa = array_merge($ieeeMantisa, $extraMantisa);
+		
+		} if (count($ieeeMantisa) < $largoMantisaUsuario) { // si la mantisa (en binario) es muy corta (depende de los bits)...
+
+			// creamos otra lista que contiene los elementos que le faltan a nuestra mantisa utilizando la funcion multMantisa
+			$extraMantisa = multMantisa($tmpNum - floor($tmpNum), // primer argumento: la parte decimal del valor absoluto del numero original
+				     $largoMantisaUsuario - count($ieeeMantisa)); // segundo argumento: las veces seran el largo necesario - lo que ya tenemos
+			$ieeeMantisa = array_merge($ieeeMantisa, $extraMantisa); // luego unimos las dos partes de la mantisa y ahora esta completa
+
+		} elseif (count($ieeeMantisa) > $largoMantisaUsuario) { // si la mantisa (en binario) es muy larga (depende de los bits)...
+
+			$ieeeMantisa = array_slice($ieeeMantisa, 0, $largoMantisaUsuario); // acortamos la mantisa desde el indice 0 hasta su correspondiente final
 		}
 
 		// llamamos a la funcion final para que despliegue los resultados y revertimos las variables que el usuario entro hacia 0
@@ -227,33 +281,32 @@ function goStart()
 	{
 		bitWork($bitsUsuario); // llamamos a una funcion que va a organizar ciertas variables globales que dependen de la cantidad de bits que el usuario quiere
 
-		if (2 * $tmpNum == 0) { 
-			doneComputingZero(); 
+		if (2 * $tmpNum == 0) { // con esto, verificamos si el numero es exactamente zero
+			doneComputingZero(); // si es exactamente zero, trabajamos en otra funcion
 	
-		} else {
+		} else { // si no es zero, podemos continuar
 
-		$primerUno = findFirstOne($tmpNum);
-		$ieeeExponente = convertir($biasUsuario - $primerUno);
+		$primerUno = findFirstOne($tmpNum); // con esto encontramos la primera occurencia del digito 1 (una parte entera)
+		// el exponente sera el bias (depende de los bits) - la cantidad de multiplicacion por 2 necesarias para obtener una parte entera
+		$ieeeExponente = convertir($biasUsuario - $primerUno); 
 
-		while (count($ieeeExponente) < $largoExponenteUsuario){
-			array_unshift($ieeeExponente, 0);
+		while (count($ieeeExponente) < $largoExponenteUsuario){ // mientras el exponente sea muy corto...
+			array_unshift($ieeeExponente, 0); // le ponemos un 0 en el indice [0] (el primero)
 		}
 
-		$ieeeMantisa = multMantisa($tmpNum, $largoMantisaUsuario + $primerUno);
+		$ieeeMantisa = multMantisa($tmpNum, $largoMantisaUsuario + $primerUno); // 
 
 		$ieeeMantisa = array_slice($ieeeMantisa, $primerUno);
 
 		// llamamos a la funcion final para que despliegue los resultados y revertimos las variables que el usuario entro hacia 0
 		doneComputing();
 		$numUsuario = 0;
-		$bitsUsuario = 0; }	
+		$bitsUsuario = 0; 
+		}	
 	}
 }
 
 goStart(); // comenzamos el programa, rapidamente llamamos a la funcion que contiene el codigo central
-
 // para que el programa se vea mejor al terminar
 echo "\n-Programa llego al final del codigo-\n"; 
-
-
 ?>
