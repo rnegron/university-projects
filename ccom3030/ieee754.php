@@ -1,6 +1,6 @@
 <?php
 /*	
-Raul Negron Otero 801-13-4680
+Raul Negron Otero 801-13-xxxx
 Programa: ieee754.php
 
 Este programa le pide un numero al usuario (en base 10). Verifica que lo entrado sea un valor numérico.

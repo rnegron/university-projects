@@ -1,7 +1,7 @@
 <?php
 
 /*
-Raul Negron Otero 801-13-4680
+Raul Negron Otero 801-13-xxxx
 Programa: ieee754_reverse.php
 
 Este programa convierte un numero en representacion IEEE754 a un numero en representacion decimal (de IEEE754 binario a base 10). El programa
