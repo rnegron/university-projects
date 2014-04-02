@@ -1,0 +1,25 @@
+PreLab01
+Raul Negron Otero
+#801-13-4680
+
+Ejercicio 1
+a = 43, b = 75
+
+Ejercicio 2
+c = 1, d = 1.4, e = 0
+
+Ejercicio 3
+i = 19, j = 19
+
+Ejercicio 4
+h = sqrt( pow(static_cast<double(a), 2.0) + pow(static_cast<double>(b), 2.0) );
+
+Ejercicio 5 
+F = P * pow( (1.0 + r), static_cast<double>(n) );
+
+Ejercicio 6:
+Imprime el numero 42
+
+
+
+

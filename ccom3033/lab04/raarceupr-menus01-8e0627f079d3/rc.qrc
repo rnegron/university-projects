@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>feet03.tiff</file>
+        <file>feet02.tiff</file>
+        <file>feet01.tiff</file>
+        <file>head01.tiff</file>
+        <file>head03.tiff</file>
+        <file>cap01.tiff</file>
+        <file>cap02.tiff</file>
+        <file>cap03.tiff</file>
+        <file>head02.tiff</file>
+    </qresource>
+</RCC>

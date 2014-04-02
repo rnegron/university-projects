@@ -1,0 +1,70 @@
+Lab02
+Raul Negrón       #801-13-4680
+Hector Quiñones   #801-09-5300
+
+
+START
+
+iniciar el seed de rand() con srand(time(NULL))
+int random = rand() % (99-5 + 1) + 5
+int pesetas, dimes, vellones, chavitos
+OUTPUT "Determine la combinacion de monedas para un cambio de " << random << " centavos."
+CALCULAR la cantidad de pesetas // pesetas = random / 25
+CALCULAR la cantidad de dimes // dimes = (random % 25) / 10
+CALCULAR la cantidad de vellones // vellones = ((random % 25) % 10) / 5
+CALCULAR la cantidad de chavitos // chavitos = (((random % 25) % 10) % 5) / 1
+pausar la pantalla con cin.get()
+OUTPUT los resultados de los calculos anteriores
+
+STOP
+
+~~~~~~~~~~ Resultados a mano ~~~~~~~~~~
+#1
+Con random = 83...
+pesetas = 83 / 25 =                    3
+dimes = (83 % 25) / 10 = 8 / 10 =      0
+vellones = ((8) % 10) / 5 = 8 / 5 =    1
+chavitos = (8) % 5 / 1 = 3 / 1 =       3
+
+#2
+Con random = 30...
+pesetas = 30 / 25 =                    1
+dimes = (30 % 25) / 10 = 5 / 10 =      0
+vellones =  ((5) % 10) / 5 = 5 / 5 =   1
+chavitos = (5) % 5 / 1 = 0 / 1 =       0
+
+~~~~~~~~~~ Resultados al ejecutar el programa ~~~~~~~~~~
+
+#1
+"
+Sistema de entrenamiento de devolución de monedas
+
+Determine la combinacion de monedas para un cambio de 55 centavos.
+Luego de que piense en la solucion, oprima ENTER para ver la solucion correcta.
+
+<<< Resultados >>>
+Para llegar a 55, necesitas:
+---------------------
+2 pesetas (50)
+0 dimes (50)
+1 vellones (55)
+0 chavitos (55)
+---------------------
+"
+
+#2
+"
+Sistema de entrenamiento de devolución de monedas
+
+Determine la combinacion de monedas para un cambio de 26 centavos.
+Luego de que piense en la solucion, oprima ENTER para ver la solucion correcta.
+
+<<< Resultados >>>
+Para llegar a 26, necesitas:
+---------------------
+1 pesetas (25)
+0 dimes (25)
+0 vellones (25)
+1 chavitos (26)
+---------------------
+"

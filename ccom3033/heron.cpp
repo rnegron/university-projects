@@ -25,7 +25,7 @@ using namespace std ;
 
 int main() {
 
-	// Definición de variables
+
 
 	double a ; // Primer lado del triangulo
 	double b ; // Segundo lado del triangulo
@@ -64,5 +64,5 @@ int main() {
 		 << "tenemos semiperímetro " << semi 
 		 << " y area " << area << endl ;
 
-	return 0 ; // Devolvemos 0 para simbolizar el final del programa.a
+	return 0 ; // Devolvemos 0 para simbolizar el final del programa.
 }
