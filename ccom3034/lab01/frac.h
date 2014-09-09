@@ -16,6 +16,8 @@ class Fraction {
 	private:
 		int num;
 		int denom;
+		
+		double value;
 
 	public:
 		Fraction();
@@ -25,6 +27,9 @@ class Fraction {
 		void setNum(int);
 		void setDenom(int);
 		void print();
+
+		double getValue();
+
 
 		bool gt(const Fraction&);
 

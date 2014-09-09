@@ -49,14 +49,20 @@ void Fraction::setDenom(int n) {
 	assert(denom != 0);
 }
 
+double Fraction::getValue() {	
+
+	value = static_cast<double>(num) / static_cast<double>(denom);
+	return value;
+}
+
 // Function getNum
-//	Returns num
+//	Returns numerator
 int Fraction::getNum() const {
 	return num;
 }
 
 // Function getDenom
-// 	Returns denom
+// 	Returns denominator
 int Fraction::getDenom() const {
 	return denom;
 }
@@ -64,7 +70,8 @@ int Fraction::getDenom() const {
 // Function print
 //	Prints the num over the denom to the console
 void Fraction::print() {
-	cout << getNum() <<  "/" << getDenom() << endl ;
+	cout << getNum() <<  "/" << getDenom() 
+		 << ", which equals " << getValue() <<  endl;
 }
 
 // Function add
@@ -77,7 +84,7 @@ Fraction Fraction::add(const Fraction& F) const {
 	localFrac.setDenom(getDenom() * F.getDenom());
 	localFrac.setNum( (getNum() * F.getDenom()) + (F.getNum() * getDenom()) );
 
-	return localFrac;
+	return localFrac.reduce();
 
 }
 
@@ -93,7 +100,7 @@ Fraction Fraction::sub(const Fraction& F) const {
 
 	Fraction localFrac = add(negFrac);
 
-	return localFrac;
+	return localFrac.reduce();
 }
 
 // Function mul
@@ -107,7 +114,7 @@ Fraction Fraction::mul(const Fraction& F) const {
 	localFrac.setNum(getNum() * F.getNum());
 	localFrac.setDenom(getDenom() * F.getDenom());
 
-	return localFrac;
+	return localFrac.reduce();
 }
 
 // Function div
