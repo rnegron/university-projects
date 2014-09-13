@@ -28,7 +28,6 @@ SweetArray::SweetArray(int n) {
 
 	// Initialize each element to -1
 	for (int i = 0; i < n; i++) {array[i] = -1;}
-
 	size = n;
 }
 
@@ -52,6 +51,19 @@ int SweetArray::countVal(int first, int last, int value) {
 
 }
 
+// Function setSize
+// INPUT: int n
+//	n contains the desired size of the array
+// OUTPUT: void
+void SweetArray::setSize(int n) {
+	array = new int[n];
+
+	// Initialize each element to -1
+	for (int i = 0; i < n; i++) {array[i] = -1;}
+	size = n;
+
+}
+
 // overloaded [] operator
 int& SweetArray::operator[](int i) {
 	return array[i];
@@ -71,10 +83,40 @@ ostream& operator<<(ostream& out, SweetArray S) {
 
 // overloaded + operator
 SweetArray SweetArray::operator+(SweetArray& S) {
-	SweetArray temp(size);
+	// Initializations
+	SweetArray temp;
+	int index;
+	bool callerIsLargest = (size > S.size) ? true : false;
+	bool bothSameSize = (size == S.size) ? true : false;
 
-	for (int i = 0; i < temp.size; i++) {
-		temp[i] = array[i] + S[i];
+	// Set size of returning SweetArray
+	// depending on size difference
+	// between calling SweetArray
+	// and paramater SweetArray
+	if (bothSameSize) {temp.setSize(size);}
+	else if(callerIsLargest) {temp.setSize(size);}
+	else {temp.setSize(S.size);}
+
+	if (callerIsLargest) {
+		for (index = 0; index < S.size; index++) {
+			temp[index] = array[index] + S[index];
+		}
+
+		while (index < size) {
+			temp[index] = array[index];
+			index++;
+		}
+	}
+
+	else {
+		for (index = 0; index < size; index++) {
+			temp[index] = array[index] + S[index];
+		}
+
+		while (index < S.size) {
+			temp[index] = S[index];
+			index++;
+		}
 	}
 
 	return temp;
@@ -97,7 +139,9 @@ SweetArray SweetArray::operator&(SweetArray& S) {
 	// in the returning SweetArray
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < S.size; j++) {
-			if (array[i] == S[j]) {amount++;}
+			if (array[i] == S[j]) {
+				amount++;
+			}
 		}
 	} // End of priming nested For loop
 

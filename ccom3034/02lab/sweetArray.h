@@ -23,6 +23,7 @@ class SweetArray {
 	public:
 		SweetArray();
 		SweetArray(int n);
+		void setSize(int n);
 		int& operator[](int i);
 		SweetArray operator+(SweetArray& S);
 		SweetArray operator&(SweetArray& S);
