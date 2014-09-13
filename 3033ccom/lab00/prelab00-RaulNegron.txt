@@ -1,0 +1,74 @@
+PreLab00
+Raúl Negrón Otero
+801-13-4680
+
+Q1: Partiendo del directorio raíz, ¿cuál sería la ruta del archivo index.html?
+
+/var/www/index.html
+
+
+Q2: Partiendo del directorio raíz, ¿cuál sería la ruta del archivo coqui.txt?
+
+~ ASUMIENDO QUE USTED SE EQUIVOCO Y QUIZO DECIR coqui.cpp YA QUE NO EXISTE coqui.txt EN LA FIGURA 1 ~
+
+/coqui.cpp
+
+
+Q3: P3: Partiendo del directorio raíz, ¿cuál sería la ruta del archivo uno.txt?
+
+/var/uno.txt
+
+
+Q4: Si nuestro directorio actual es /home/uvalda. ¿Cuál es la ruta relativa del archivo data01.txt?
+
+results/data01.txt
+
+
+Q5: Si nuestro directorio actual es /home. ¿Cuál es la ruta relativa del archivo you.sh?
+
+./uvalda/bin/you.sh
+
+
+Q6: Abra un terminal en http://simpleshell.com/ (Start my session). ¿Cuál es el resultado de ejectuar ls? (haga copy paste del resultado)
+
+~ NO OBTUVE NINGUN RESULTADO ~
+
+
+Q7: En el terminal en http://simpleshell.com/ . ¿Cuál es el resultado de ejectuar ls -al? (haga copy paste del resultado)
+
+total 24
+drwx------   3 user061 webusers 4096 Jan 21 17:03 . 
+drwxr-xr-x 107 root    webusers 4096 Jan 21 21:50 .. 
+-rw-r--r--   1 user061 webusers  127 Jan 21 17:03 .bash_logout
+-rw-r--r--   1 user061 webusers  193 Jan 21 17:03 .bash_profile
+-rw-r--r--   1 user061 webusers  554 Jan 21 17:03 .bashrc
+-rw-r--r--   1 user061 webusers    0 Jan 21 17:03 .hushlogin
+drwx------   2 user061 webusers 4096 Jan 21 17:03 .ssh
+
+
+Q8: En el terminal en http://simpleshell.com/ cree un directorio llamado tmp. ¿Cuál es el resultado de ejectuar ls -al? (haga copy paste del resultado)
+
+total 28
+drwx------   4 user061 webusers 4096 Jan 21 21:51 . 
+drwxr-xr-x 107 root    webusers 4096 Jan 21 21:50 .. 
+-rw-r--r--   1 user061 webusers  127 Jan 21 17:03 .bash_logout
+-rw-r--r--   1 user061 webusers  193 Jan 21 17:03 .bash_profile
+-rw-r--r--   1 user061 webusers  554 Jan 21 17:03 .bashrc
+-rw-r--r--   1 user061 webusers    0 Jan 21 17:03 .hushlogin
+drwx------   2 user061 webusers 4096 Jan 21 17:03 .ssh 
+drwxr-xr-x   2 user061 webusers 4096 Jan 21 21:51 tmp 
+
+
+Q9: En el terminal en http://simpleshell.com/ cambie de directorio a /. ¿Cuál es el resultado de ejecutar ls? (haga copy paste del resultado)
+
+bin  dev  etc  home  lib  lib64  opt  proc  root  sbin  sys  tmp  usr  var
+
+
+Q10: En el terminal en http://simpleshell.com/ cambiese a su directorio home. ¿Cuál es el resultado de pwd? (haga copy paste del resultado)
+
+/home/user061
+
+
+Q11: En el terminal en http://simpleshell.com/ cambiese al directorio /usr/lib64/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4. ¿Cuántos archivos que comienzan con la letra r contiene ese directorio? (copie los nombres de los archivos)
+
+1. random, 2. ratio, 3. regex
