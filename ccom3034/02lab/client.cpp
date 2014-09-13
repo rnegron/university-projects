@@ -9,8 +9,8 @@ int main() {
 	SweetArray A(SIZE), B(SIZE), C(SIZE);
 
 	for (int i=0; i<SIZE; i++) {
-		A[i] = i * 30;
-		B[i] = i * 60;
+		A[i] = i * 2;
+		B[i] = i * 4;
 
 	}
 
