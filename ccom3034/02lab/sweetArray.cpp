@@ -162,7 +162,22 @@ SweetArray SweetArray::operator&(SweetArray& S) {
 			}
 		}
 	}
-	return temp;
+
+	// R&R patch
+	// Delete the trailing negative ones
+
+	int amountRem = 0;
+	for (int i = 0; i < temp.size; i++) {
+		if (temp[i] == -1) {amountRem++;}
+	}
+
+	SweetArray rRem(temp.size - amountRem);
+
+	for (int i = 0; i < rRem.size; i++) {
+		rRem[i] = temp[i];
+	}
+
+	return rRem;
 }
 
 // overloaded | operator
