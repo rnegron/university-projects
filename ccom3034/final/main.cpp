@@ -1,33 +1,45 @@
-/* 
- * File:   Main.cpp
- * Author: R. Arce-Nazario
- * 
- * Created on March 5, 2012, 10:50 PM
- * 
- * Client for testing the Deck class.
- */
+/*
+  Ricardo López
+  Raúl Negrón
+*/
 
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 #include "Deck.h"
+#include "Player.h"
+#include "Guerra.h"
 
 int main() {
 
-    vector <int> V;
+    srand(time(NULL));
     
-    srand(time(0));
+    // Create Deck instances
+    Deck* D1 = new Deck;
+    D1->shuffle();
+    Deck* D2 = new Deck;
+    D2->shuffle();
 
-    Deck D;
+    // Create Player instances
+    Player P1(D1);
+    Player P2(D2);
 
-    cout << "Here's your deck: ";
-    for (int i=1; i<D.size(); ++i) 
-        cout << D.asCard(i) << " ";
-    cout << endl;
+    // Start Debug
+    cout << "\nP1 Deck: ";
+    P1.getCards();
 
-    D.shuffle();
-    cout << "After shuffle: ";
-    for (int i=1; i<D.size(); ++i) 
-        cout << D.asCard(i) << " ";
-    cout << endl;
-    
+    cout << "\nP2 Deck: ";
+    P2.getCards();
+    // End Debug
+
+    // Create game state and start game
+    Guerra game;
+    game.start(P1, P2);
+
+
+    // Memory management
+    delete D1;
+    delete D2;
+
     return 0;
 }

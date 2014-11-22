@@ -1,9 +1,9 @@
-/* 
+/*
  * File:   Deck.h
- * Author: R Arce-Nazario
+ * Author: R. Arce-Nazario
  *
  * Created on March 5, 2012, 10:50 PM
- * 
+ *
  * Declaration of class Deck.
  */
 
@@ -12,16 +12,16 @@
 #include <vector>
 using namespace std;
 
-// Deck is a child class of vector<int>, so it 
+// Deck is a child class of vector<int>, so it
 // will inherit all its cool functions.
 class Deck : public vector<int> {
 public:
     // Constructor
     Deck();
-    
+
     // Shuffles the cards
     void shuffle();
-    
+
     // Returns the card at position as a number,suit.
     string asCard(int pos);
 };
@@ -35,4 +35,3 @@ const char club[]    = "\u2663";
 
 
 #endif	/* DECK_H */
-

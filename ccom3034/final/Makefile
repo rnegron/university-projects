@@ -1,13 +1,19 @@
-CC=g++
-DEPS = Deck.h
-OBJ = main.o Deck.o 
-EXEC = roba-paquetes
+all: guerra
 
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+guerra: main.o Deck.o Player.o Guerra.o
+	g++ main.o Deck.o Player.o Guerra.o -o guerra
 
-$(EXEC): $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
+main.o: main.cpp
+	g++ -c main.cpp
 
-pack:
-	tar cvzf $(EXEC).tgz $(DEPS) *.cpp Makefile
+Deck.o:
+	g++ -c Deck.cpp
+
+Player.o:
+	g++ -c Player.cpp
+
+Guerra.o:
+	g++ -c Guerra.cpp
+
+clean:
+	rm -rf *.o guerra

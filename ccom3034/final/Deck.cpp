@@ -1,9 +1,9 @@
-/* 
+/*
  * File:   Deck.cpp
  * Author: R. Arce-Nazario
- * 
+ *
  * Created on March 5, 2012, 10:50 PM
- * 
+ *
  * Implementation for the functions of the Deck class.
  */
 
@@ -15,22 +15,22 @@
 
 Deck::Deck() {
     // initially just fill the deck with 0 through 51
-    for (int i=0; i<52; ++i) push_back(i);
+    for (int i = 0; i <= 26; ++i) push_back(i);
 }
 
 void Deck::shuffle() {
-    // luckily the algorithm library includes a simple way of 
+    // luckily the algorithm library includes a simple way of
     // randomly permuting the contents of the vector
     random_shuffle(begin(), end());
 }
 
 string Deck::asCard(int pos) {
-    if (pos < 0 || pos > 51 ) return "BAD";
-    
+    if (pos < 0 || pos > 26 ) return "BAD";
+
     stringstream ss;
 
     // determine the number of the card
-    
+
     switch ((*this)[pos] % 13) {
         case 0: ss << "A";
             break;
@@ -46,7 +46,7 @@ string Deck::asCard(int pos) {
     string st = ss.str();
 
     // determine the card's suit
-    
+
     switch ((*this)[pos] / 13) {
         case 0:
             st += club;
@@ -61,5 +61,5 @@ string Deck::asCard(int pos) {
             st += spade;
             break;
     }
-    return st;   
+    return st;
 }
