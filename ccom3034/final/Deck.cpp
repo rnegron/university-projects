@@ -13,24 +13,27 @@
 #include <algorithm>
 #include <sstream>
 
+// random generator function (for random_shuffle)
+int rng (int i) { return rand() % i; }
+
 Deck::Deck() {
-    // initially just fill the deck with 0 through 51
-    for (int i = 0; i <= 26; ++i) push_back(i);
+    // initially just fill the deck with 0 through 25
+    for (int i = 0; i < 51; ++i) push_back(i);
 }
 
 void Deck::shuffle() {
+
     // luckily the algorithm library includes a simple way of
     // randomly permuting the contents of the vector
-    random_shuffle(begin(), end());
+    random_shuffle(begin(), end(), rng);
 }
 
 string Deck::asCard(int pos) {
-    if (pos < 0 || pos > 26 ) return "BAD";
+    if (pos < 0 || pos > 51 ) cerr << "BAD";
 
     stringstream ss;
 
     // determine the number of the card
-
     switch ((*this)[pos] % 13) {
         case 0: ss << "A";
             break;
@@ -46,7 +49,6 @@ string Deck::asCard(int pos) {
     string st = ss.str();
 
     // determine the card's suit
-
     switch ((*this)[pos] / 13) {
         case 0:
             st += club;
