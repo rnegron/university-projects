@@ -24,19 +24,25 @@ def lexer(s):
     # use string splitting to tokenize the input
     pre_tokens = s.split()
 
-    # fuse together digits
+    # fuse together digits using a list-as-buffer approach
     tokens = []
     buff = []
-
+    
     for char in pre_tokens:
+        # if a char is an allowed token, 
+        # flush the buffer into the results list
+        # and then add the char
         if char in allowed_tokens:
             tokens.append(''.join(buff))
             buff[:] = []
             tokens.append(char)
+
+        # else the char is either a number or
+        # an unallowed token
         else:
             buff.append(char)
             
-    # flush the buffer
+    # flush the buffer at the end
     tokens.append(''.join(buff))
 
     # remove those annoying empty chars from list
