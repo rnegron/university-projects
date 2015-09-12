@@ -1,0 +1,19 @@
+https://docs.python.org/2/howto/sockets.html
+
+--- Description of the program ---
+
+--- How to use ---
+
+Run the 'server' script first:
+
+    $ python scheduler.py <server port>
+
+Then run as many 'mobile' scripts as desired:
+
+    $ python mobile.py <mobileID> <server address> <server port>
+
+
+--- Who helped ---
+
+https://docs.python.org/2/howto/sockets.html
+http://effbot.org/zone/thread-synchronization.htm

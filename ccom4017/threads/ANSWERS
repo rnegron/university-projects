@@ -1,0 +1,6 @@
+What is/are the critical regions of the program?
+
+What was used to protect the critical regions and to avoid race conditions?
+    A semaphore synchronization primitive was used to avoid two processes
+    
+What was used to block the consumers until there is data in the queue?
