@@ -1,6 +1,15 @@
 What is/are the critical regions of the program?
+    The critical regions of the program are contained in the access to the
+    queue using put() or get() and updating the counter which increments or
+    decrements depending on the amount of messages left.
 
 What was used to protect the critical regions and to avoid race conditions?
-    A semaphore synchronization primitive was used to avoid two processes
-    
+    A semaphore synchronization primitive was used to avoid two threads
+    updating the queue at the same time and even though the two threads
+    which represent the Consumer and the Producer have their own counters,
+    the code which updates these counters was placed inside a semaphore
+    block as well.
+
 What was used to block the consumers until there is data in the queue?
+    An event object was used as a flag to signal the consumers that
+    an initial item was placed inside the queue.

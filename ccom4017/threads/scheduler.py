@@ -42,8 +42,9 @@ class Producer(threading.Thread):  # define the Producer thread class
         # protect the critical region with a semaphore
         with self.semaphore:
             self.queue.put(item)
-            # DEBUG
-            print '{} put an item into the queue - {}'.format(self.name, item)
+
+
+            print '{} put an item into the queue - {}'.format(self.name, item) # DEBUG
             self.amount_messages += 1
 
         if first:  # if it is the first time produce is run, notify the consumer
@@ -118,11 +119,11 @@ class Consumer(threading.Thread):  # define the Consumer thread class
                 with self.semaphore:
                     item = self.queue.get()
 
+
                     print '{} got an item - {}'.format(self.name, item) # DEBUG
                     self.messages_left -= 1
 
-                mobileID, mobileCPU = item.split(
-                    ':')  # decode the received item
+                mobileID, mobileCPU = item.split(':')  # decode the received item
 
                 # if this is a new Mobile, create a new key and store CPU time
                 if mobileID not in self.results:

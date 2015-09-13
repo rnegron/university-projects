@@ -1,6 +1,15 @@
-https://docs.python.org/2/howto/sockets.html
-
 --- Description of the program ---
+
+The program consists of two Python scripts, one which acts as a client
+and another which works like a server. Once both are connected via socket,
+the client will send a string which contains both the identifying ID of the
+client (since more than one client is supported) and a random amount
+of seconds which correspond to theoretical CPU clock usage. The server
+receives and stores the data using one thread while another thread retrieves
+the data and organizes it into a dictionary, which is displayed after
+a specified amount of messages have been processed. The resulting output
+correspond to the sum of the theoretical CPU times for each client script
+which was active during the server's lifetime.
 
 --- How to use ---
 
@@ -12,8 +21,16 @@ Then run as many 'mobile' scripts as desired:
 
     $ python mobile.py <mobileID> <server address> <server port>
 
+In modifying scheduler.py's MAX_MESSAGES global variable, the user can make
+the program run for a longer period of time. The global variables in
+mobile.py control the intervals within which both the CPU time and the
+sleep time fall into.
 
 --- Who helped ---
+
+I discussed socket implementation and general code refactoring with Ricardo
+López. I also visited the professor's office early on to get a better idea
+of how to proceed. The following sites also helped:
 
 https://docs.python.org/2/howto/sockets.html
 http://effbot.org/zone/thread-synchronization.htm

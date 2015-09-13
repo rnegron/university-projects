@@ -51,7 +51,6 @@ def main():
         sent = clientSocket.sendto("{}:{}".format(
             mobileID, mobileCPU), (address, int(port)))
 
-
         print 'Mobile {} sending CPU time = {}s'.format(mobileID, mobileCPU)
 
         # wait a random amount of time interval between sends
