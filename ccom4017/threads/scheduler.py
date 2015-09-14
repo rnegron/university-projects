@@ -12,52 +12,38 @@ September 15, 2015
 
 """
 
-import Queue
 import socket
 import threading
 import time
+from collections import deque
 from sys import argv
 
 HOST = 'localhost'
-MAX_MESSAGES = 10
+MAX_MESSAGES = 15
 BUFFER_SIZE = 4096
 
 
 class Producer(threading.Thread):  # define the Producer thread class
 
-    def __init__(self, shared_queue, shared_semaphore, shared_event, port):
+    def __init__(self, shared_buffer, empty_semaphore, full_semaphore,
+                 binary_semaphore, port):
+
         threading.Thread.__init__(self)
         self.name = 'Producer-Thread'
-        self.queue = shared_queue
-        self.semaphore = shared_semaphore
-        self.event = shared_event
+        self.buffer = shared_buffer
+        self.empty_semaphore = empty_semaphore
+        self.full_semaphore = full_semaphore
+        self.binary_semaphore = binary_semaphore
         self.port = int(port)
-
-    def produce(self, first=False):
-
-        # get the data from the client socket
-        item, address = self.serverSocket.recvfrom(BUFFER_SIZE)
-
-        # store the data to be consumed later by the other thread
-        # protect the critical region with a semaphore
-        with self.semaphore:
-            self.queue.put(item)
-
-
-            print '{} put an item into the queue - {}'.format(self.name, item) # DEBUG
-            self.amount_messages += 1
-
-        if first:  # if it is the first time produce is run, notify the consumer
-            self.event.set()
-            print self.name + ' set the event'  # DEBUG
+        self.debug = '{} put an item - Mobile {} sent {}s'
 
     def run(self):
         """
         the run function for the producer listens on a port and stores incoming
-        data to the shared queue, then sleeps for a predetermined amount of time
+        data to the shared buffer, then sleeps for a predetermined amount of time
         """
 
-        print self.name + ' is running now'  # DEBUG
+        print self.name + ' is running now'
 
         # initalizes to the default address family: AF_INET and uses type: UDP
         self.serverSocket = socket.socket(type=socket.SOCK_DGRAM)
@@ -71,12 +57,26 @@ class Producer(threading.Thread):  # define the Producer thread class
         # counting variable to stop after MAX_MESSAGES have been received
         self.amount_messages = 0
 
-        # run the produce() function for the first time, notifying the consumer
-        self.produce(True)
-
         # main producer loop which receives data and stores it
         while self.amount_messages < MAX_MESSAGES:
-            self.produce()
+
+            # get the data from the client socket
+            item, address = self.serverSocket.recvfrom(BUFFER_SIZE)
+
+            # store the data to be consumed later by the other thread
+            # protect the critical region with semaphores
+            self.empty_semaphore.acquire()
+            self.binary_semaphore.acquire()
+            self.buffer.append(item)
+            self.binary_semaphore.release()
+            self.full_semaphore.release()
+
+            mobileID, mobileCPU = item.split(':')  # decode the message
+
+            # print a confirmation message
+            print self.debug.format(self.name, mobileID, mobileCPU)
+
+            self.amount_messages += 1
 
         # after amount_messages == MAX_MESSAGES, close the socket and return
         self.serverSocket.close()
@@ -86,44 +86,44 @@ class Producer(threading.Thread):  # define the Producer thread class
 
 class Consumer(threading.Thread):  # define the Consumer thread class
 
-    def __init__(self, shared_queue, shared_semaphore, shared_event, results):
+    def __init__(self, shared_buffer, empty_semaphore, full_semaphore,
+                 binary_semaphore, results):
         threading.Thread.__init__(self)
         self.name = 'Consumer-Thread'
-        self.queue = shared_queue
-        self.semaphore = shared_semaphore
-        self.event = shared_event
+        self.buffer = shared_buffer
+        self.empty_semaphore = empty_semaphore
+        self.full_semaphore = full_semaphore
+        self.binary_semaphore = binary_semaphore
         self.results = results
+        self.debug = '{} got an item - Mobile {} sent {}s'
 
     def run(self):
         """
-        the run function for the consumer retrieves items from the queue and
+        the run function for the consumer retrieves items from the buffer and
         stores the results in a dictionary, then sleeps for the retreived
         amount of time
         """
 
-        self.messages_left = MAX_MESSAGES  # count down the remaining messages
-
-        print self.name + ' is waiting now'  # DEBUG
-        self.event.wait()  # wait for the Producer to singal an item in the queue
+        print self.name + ' is running now'
 
         while True:  # main consumer loop which gets an item and stores it
 
-             # if we received them all, break and return
-            if self.messages_left == 0:
-                break
+            # if this is not the only thread (other than the main thread),
+            # the producer is still working. This thread must keep working too
+            if threading.active_count() != 2:
 
-            else:
+                # get an item from the buffer and decrement the counter
+                # protect critical region with semaphores
+                self.full_semaphore.acquire()
+                self.binary_semaphore.acquire()
+                item = self.buffer.popleft()
+                self.binary_semaphore.release()
+                self.empty_semaphore.release()
 
-                # get an item from the queue and decrement the counter
-                # protect critical region with a semaphore
-                with self.semaphore:
-                    item = self.queue.get()
+                mobileID, mobileCPU = item.split(':')  # decode the message
 
-
-                    print '{} got an item - {}'.format(self.name, item) # DEBUG
-                    self.messages_left -= 1
-
-                mobileID, mobileCPU = item.split(':')  # decode the received item
+                # print a confirmation message
+                print self.debug.format(self.name, mobileID, mobileCPU)
 
                 # if this is a new Mobile, create a new key and store CPU time
                 if mobileID not in self.results:
@@ -136,6 +136,31 @@ class Consumer(threading.Thread):  # define the Consumer thread class
                 # sleep the extracted amount of seconds
                 time.sleep(float(mobileCPU))
 
+            # if this is the only thread, dont worry about semaphores
+            # finish working on the buffer, then break and return
+            else:
+                while len(self.buffer) > 0:
+
+                    item = self.buffer.popleft()  # get an item from the buffer
+
+                    mobileID, mobileCPU = item.split(':')  # decode the message
+
+                    # print a confirmation message
+                    print self.debug.format(self.name, mobileID, mobileCPU)
+
+                    # if this is a new Mobile, create key and store CPU time
+                    if mobileID not in self.results:
+                        self.results[mobileID] = float(mobileCPU)
+
+                    # otherwise add the new CPU time to the overall CPU time
+                    else:
+                        self.results[mobileID] += float(mobileCPU)
+
+                    # sleep the extracted amount of seconds
+                    time.sleep(float(mobileCPU))
+
+                # break once the consumer is the only thread and is finished
+                break
         return
 
 
@@ -150,13 +175,19 @@ def main():
     port = argv[1]  # get port number from command line arguments
     results = {}    # initialize the results dicitonary to the empty dict
 
-    queue = Queue.Queue()
-    semaphore = threading.Semaphore()
-    event = threading.Event()
+    # initialize the objects to send to both threads
+    buffer = deque(maxlen=MAX_MESSAGES)
+    empty_semaphore = threading.BoundedSemaphore(MAX_MESSAGES)
+    full_semaphore = threading.Semaphore(0)
+    binary_semaphore = threading.Semaphore()
+    shared_event = threading.Event()
 
     # initialize the Producer and Consumer threads
-    pThread = Producer(queue, semaphore, event, port)
-    cThread = Consumer(queue, semaphore, event, results)
+    pThread = Producer(buffer, empty_semaphore,
+                       full_semaphore, binary_semaphore, port)
+
+    cThread = Consumer(buffer, empty_semaphore,
+                       full_semaphore, binary_semaphore, results)
 
     # start both threads
     cThread.start()
