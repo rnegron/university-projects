@@ -1,28 +1,29 @@
+#!/usr/bin/env python
+
 def first_come(processes):
     print('\tFirst come, first served\n')
-    process_table = {process + 1:time for process, time in enumerate(processes)}
     acumulator = 0
     for i in range(len(processes)):
-        idx = i + 1
-        acumulator += process_table[idx]
-        process_table[idx] = acumulator
-        print('Process #{} took {} seconds.\n'.format(idx, process_table[idx]))
+        acumulator += processes[i]
+        print('Process #{} took {} seconds.\n'.format(i + 1, acumulator))
 
 def shortest_job(processes):
     print('\tShortest job first\n')
-    process_table = {process + 1:time for process, time in enumerate(processes)}
-    shortest_list = sorted(processes)
+    process_tuples = [(process + 1, time) for process, time in enumerate(processes)]
+    sorted_tuples = sorted(process_tuples, key=lambda time: time[1])
     acumulator = 0
-    for i in range(len(shortest_list)):
-        acumulator += shortest_list[i]
-        print('... took {} seconds.\n'.format(acumulator))
-        
+    for i in range(len(processes)):
+        acumulator += sorted_tuples[i][1]
+        print('Process #{} took {} seconds.\n'.format(sorted_tuples[i][0], acumulator))
+
 def round_robin(processes, quantum):
+    print('\tRound Robin\n')
     pass
 
 def main():
-    shortest_job([5, 8, 10, 3, 10])
-    first_come([5, 8, 10, 3, 10])
+    process_list = [5, 1]
+    shortest_job(process_list)
+    first_come(process_list)
 
 if __name__ == '__main__':
     main()
