@@ -1,7 +1,7 @@
 ###############################################################################
 #
 # Filename: mds_db.py
-# Author: Jose R. Ortiz and ... (hopefully some students contribution)
+# Author: Jose R. Ortiz and Raul E. Negron
 #
 # Description:
 # 	List client for the DFS
@@ -10,7 +10,6 @@
 
 import socket
 import sys
-
 from Packet import *
 
 
@@ -35,16 +34,16 @@ def client(ip, port):
         sock.sendall(msg)
 
         # Receive data from the server and shut down
-        recv = sock.recv(1024)
-        pResp.DecodePacket(recv)
+        resp = sock.recv(1024)
+        pResp.DecodePacket(resp)
 
-        recv = pResp.getFileArray()
+        resp = pResp.getFileArray()
 
     finally:
         sock.close()
 
     try:
-        for fname, fsize in recv:
+        for fname, fsize in resp:
             print "{} {} bytes".format(fname, fsize)
     except:
         print "Server returned NAK..."
