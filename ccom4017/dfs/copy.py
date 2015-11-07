@@ -11,6 +11,7 @@
 import socket
 import sys
 import os.path
+from math import ceil as ceiling
 
 from Packet import *
 
@@ -19,34 +20,46 @@ def usage():
 	sys.exit(0)
 
 def copyToDFS(address, fname, path):
-	""" Contact the metadata server to ask to copu file fname,
+	""" Contact the metadata server to ask to copy file fname,
 	    get a list of data nodes. Open the file in path to read,
 	    divide in blocks and send to the data nodes.
 	"""
 
 	# Create a connection to the data server
-
-	# Fill code
+	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	meta_sock.connect(address)
 
 	# Read file
+	with open(fname, 'rb') as f:
+		fileData = f.read()
 
-	# Fill code
+	fsize = len(fileData)
 
 	# Create a Put packet with the fname and the length of the data,
 	# and sends it to the metadata server
-
-	# Fill code
+	meta_p = Packet()
+	meta_p.BuildPutPacket(fname, fsize)
+	meta_sock.sendall(meta_p.getEncodedPacket())
 
 	# If no error or file exists
-	# Get the list of data nodes.
-	# Divide the file in blocks
-	# Send the blocks to the data servers
+	resp = Packet()
+	msg = meta_sock.recv(1024)
+	if msg != "DUP":
+		# Get the list of data nodes.
+		resp.DecodePacket(msg)
+		nodeList = resp.getDataNodes()
 
-	# Fill code
+		# Divide the file in blocks
+		blockSize = ceiling(float(fsize) / len(nodeList))
+		blockList = []
+		for i in range(nodeList):
+			pass
 
-	# Notify the metadata server where the blocks are saved.
+		# Send the blocks to the data servers
+		data_p = Packet()
 
-	# Fill code
+		# Notify the metadata server where the blocks are saved.
+		meta_p.BuildDataBlockPacket()
 
 def copyFromDFS(address, fname, path):
 	""" Contact the metadata server to ask for the file blocks of

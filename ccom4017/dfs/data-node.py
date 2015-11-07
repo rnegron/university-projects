@@ -1,7 +1,7 @@
 ###############################################################################
 #
 # Filename: data-node.py
-# Author: Jose R. Ortiz and ... (hopefully some students contribution)
+# Author: Jose R. Ortiz and Raul E. Negron
 #
 # Description:
 # 	data node server for the DFS
@@ -14,6 +14,7 @@ import socket
 import SocketServer
 import uuid
 import os.path
+from os import mkdir, rmdir
 
 
 def usage():
@@ -40,9 +41,12 @@ def register(meta_ip, meta_port, data_ip, data_port):
 
             if response == "DUP":
                 print "Duplicate Registration"
+                rmdir(DATA_PATH)
+
 
             if response == "NAK":
                 print "Registratation ERROR"
+                rmdir(DATA_PATH)
 
     finally:
         sock.close()
@@ -82,7 +86,7 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
     def handle(self):
         msg = self.request.recv(1024)
         #! print msg, type(msg)
-
+        print DATA_PATH
         p = Packet()
         p.DecodePacket(msg)
 
@@ -108,9 +112,17 @@ if __name__ == "__main__":
         if len(sys.argv) > 4:
             META_PORT = int(sys.argv[4])
 
-        if not os.path.isdir(DATA_PATH):
-            print "Error: Data path %s is not a directory." % DATA_PATH
-            usage()
+        if DATA_PATH == "default" or not os.path.isdir(DATA_PATH):
+            nodeNum = 1
+            while True:
+                DATA_PATH = './data{}'.format(nodeNum)
+                try:
+                    mkdir(DATA_PATH)
+                    break
+                except OSError:
+                    nodeNum += 1
+                    continue
+
     except:
         usage()
 

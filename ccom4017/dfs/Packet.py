@@ -10,11 +10,9 @@
 
 import json
 
-
 class Packet:
 
     def __init__(self):
-
         self.commands = ["reg", "list", "put", "get", "dblks"]
         self.packet = {}
 

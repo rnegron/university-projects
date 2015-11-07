@@ -8,3 +8,4 @@ mytest.py
 *.html
 *.md
 testdb.py
+clean.sh
