@@ -43,7 +43,6 @@ def register(meta_ip, meta_port, data_ip, data_port):
                 print "Duplicate Registration"
                 rmdir(DATA_PATH)
 
-
             if response == "NAK":
                 print "Registratation ERROR"
                 rmdir(DATA_PATH)
@@ -59,19 +58,21 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
            saves it with an unique ID.  The ID is sent back to the
            copy client.
         """
-
+        # Receive the data block.
         fname, fsize = p.getFileInfo()
-
-        self.request.send("OK")
+        print 'Got: fname: {}, fsize: {}'.format(fname, fsize)
 
         # Generates an unique block id.
         blockid = str(uuid.uuid1())
 
-        # Open the file for the new data block.
-        # Receive the data block.
-        # Send the block id back
+        # Create the directory for the new data block if not yet created.
+        if not os.path.isdir(DATA_PATH):
+            os.path.mkdir(DATA_PATH)
 
-        # Fill code
+        # Send the block id back
+        respP = Packet()
+        respP.BuildGetDataBlockPacket(blockid)
+        self.request.sendall(respP.getEncodedPacket())
 
     # def handle_get(self, p):
     #

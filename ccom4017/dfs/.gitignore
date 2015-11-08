@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 *.db
+*.txt
+*.m4a
 mytest.py
 *.html
 *.md

@@ -36,48 +36,75 @@ def copyToDFS(address, fname, path):
 	fsize = len(fileData)
 
 	# Create a Put packet with the fname and the length of the data,
-	# and sends it to the metadata server
+	# and send it to the metadata server
 	meta_p = Packet()
 	meta_p.BuildPutPacket(fname, fsize)
 	meta_sock.sendall(meta_p.getEncodedPacket())
 
-	# If no error or file exists
-	resp = Packet()
 	msg = meta_sock.recv(1024)
-	if msg != "DUP":
+	resp = Packet()
+
+	# If no error or if file already exists
+	try:
 		# Get the list of data nodes.
 		resp.DecodePacket(msg)
-		nodeList = resp.getDataNodes()
 
-		# Divide the file in blocks
+	# The received data is not a packet...
+	except:
+		print "ERROR: Possible duplicate file."
+		return
+
+	nodeList = resp.getDataNodes()
+
+	# Divide the file in blocks
+	# possibly: divide normally then add 1 if not divisible
+	if len(nodeList) > 0:
 		blockSize = ceiling(float(fsize) / len(nodeList))
-		blockList = []
-		for i in range(nodeList):
-			pass
+	else:
+		print "NodeList:", nodeList
+		return
 
-		# Send the blocks to the data servers
-		data_p = Packet()
+	blockList = []
+	for i in range(len(nodeList)):
+		blockList.append('block{}'.format(i + 1))
 
-		# Notify the metadata server where the blocks are saved.
-		meta_p.BuildDataBlockPacket()
+	# Send the blocks to the data servers
+	data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	data_p = Packet()
 
-def copyFromDFS(address, fname, path):
-	""" Contact the metadata server to ask for the file blocks of
-	    the file fname.  Get the data blocks from the data nodes.
-	    Saves the data in path.
-	"""
+	for node in nodeList:
+		data_sock.connect(tuple(node))
+		data_p.BuildPutPacket(blockList.pop(), blockSize)
+		data_sock.sendall(data_p.getEncodedPacket())
 
-   	# Contact the metadata server to ask for information of fname
+		# Receive the data block id
+		msg = data_sock.recv(1024)
+		resp = Packet()
+		resp.DecodePacket(msg)
 
-	# Fill code
+		print "GOT ID BACK! ITS {}".format(resp.getBlockID())
 
-	# If there is no error response Retreive the data blocks
+	# Notify the metadata server where the blocks are saved.
+	# meta_p.BuildDataBlockPacket()
 
-	# Fill code
 
-    	# Save the file
-
-	# Fill code
+# def copyFromDFS(address, fname, path):
+# 	""" Contact the metadata server to ask for the file blocks of
+# 	    the file fname.  Get the data blocks from the data nodes.
+# 	    Saves the data in path.
+# 	"""
+#
+#    	# Contact the metadata server to ask for information of fname
+#
+# 	# Fill code
+#
+# 	# If there is no error response Retreive the data blocks
+#
+# 	# Fill code
+#
+#     	# Save the file
+#
+# 	# Fill code
 
 if __name__ == "__main__":
 #	client("localhost", 8000)
@@ -102,11 +129,11 @@ if __name__ == "__main__":
 	elif len(file_to) > 2:
 		ip = file_to[0]
 		port = int(file_to[1])
-		to_path = file_to[2]
 		from_path = sys.argv[1]
+		to_path = file_to[2]
 
 		if os.path.isdir(from_path):
 			print "Error: path %s is a directory.  Please name the file." % from_path
 			usage()
 
-		copyToDFS((ip, port), to_path, from_path)
+		copyToDFS((ip, port), from_path, to_path)

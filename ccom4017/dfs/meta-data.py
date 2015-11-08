@@ -28,12 +28,13 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
 		"""
 		try:
 			if db.AddDataNode(p.getAddr(), p.getPort()):
-				self.request.sendall("ACK")
+                            print 'data node registered'
+                            self.request.sendall("ACK")
 			else:
 				self.request.sendall("DUP")
 		except:
 			self.request.sendall("NAK")
-    
+
     def handle_list(self, db):
         """Get the file list from the database and send list to client"""
         pResp = Packet()
@@ -52,6 +53,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
     	fname, fsize = p.getFileInfo()
 
     	if db.InsertFile(fname, fsize):
+            print "file inserted in db"
             pResp = Packet()
             pResp.BuildPutResponse(db.GetDataNodes())
             self.request.sendall(pResp.getEncodedPacket())
