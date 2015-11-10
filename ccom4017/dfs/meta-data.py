@@ -27,6 +27,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
 			NAK if problem, DUP if the IP and port already registered
 		"""
 		try:
+            # try and add the data node to the data base
 			if db.AddDataNode(p.getAddr(), p.getPort()):
                             print 'data node registered'
                             self.request.sendall("ACK")
@@ -37,9 +38,9 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
 
     def handle_list(self, db):
         """Get the file list from the database and send list to client"""
-        pResp = Packet()
 
         try:
+            pResp = Packet()
             pResp.BuildListResponse(db.GetFiles())
             self.request.sendall(pResp.getEncodedPacket())
         except:
@@ -53,12 +54,11 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
     	fname, fsize = p.getFileInfo()
 
     	if db.InsertFile(fname, fsize):
-            print "file inserted in db"
+            print "file '{}' inserted in db".format(fname)
             pResp = Packet()
             pResp.BuildPutResponse(db.GetDataNodes())
             self.request.sendall(pResp.getEncodedPacket())
 
-            # Store the data blocks with the file info and block id
     	else:
     		self.request.sendall("DUP")
 
@@ -81,10 +81,14 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
     def handle_blocks(self, db, p):
         """Add the data blocks to the file inode"""
 
+        print "Inside the block handler..."
         fname = p.getFileName()
         fblocks = p.getDataBlocks()
 
-        db.AddBlockToInode(fname, fblocks)
+        if db.AddBlockToInode(fname, fblocks):
+            print "Data blocks for '{}' added to inodes".format(fname)
+        else:
+            print "Could not add data blocks..."
 
     def handle(self):
 
@@ -122,6 +126,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
             self.handle_get(db, p)
 
         elif cmd == "dblks":
+            print 'BLOCKS!!'
             # Client sending data blocks for file
             self.handle_blocks(db, p)
 

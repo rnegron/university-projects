@@ -55,24 +55,27 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
 
     def handle_put(self, p):
         """Receives a block of data from a copy client, and
-           saves it with an unique ID.  The ID is sent back to the
+           saves it with a unique ID. The ID is then sent back to the
            copy client.
         """
-        # Receive the data block.
+        # Receive the data block info.
         fname, fsize = p.getFileInfo()
         print 'Got: fname: {}, fsize: {}'.format(fname, fsize)
+
+        # Receive the data
+        data = self.request.recv(1024)
 
         # Generates an unique block id.
         blockid = str(uuid.uuid1())
 
-        # Create the directory for the new data block if not yet created.
-        if not os.path.isdir(DATA_PATH):
-            os.path.mkdir(DATA_PATH)
+        print 'Writing {} to {}'.format(fname, os.path.join(DATA_PATH, blockid + '.dat'))
+        with open(os.path.join(DATA_PATH, blockid + '.dat'), 'wb') as f:
+            f.write(data)
 
         # Send the block id back
-        respP = Packet()
-        respP.BuildGetDataBlockPacket(blockid)
-        self.request.sendall(respP.getEncodedPacket())
+        resp = Packet()
+        resp.BuildGetDataBlockPacket(blockid)
+        self.request.sendall(resp.getEncodedPacket())
 
     # def handle_get(self, p):
     #
@@ -87,7 +90,6 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
     def handle(self):
         msg = self.request.recv(1024)
         #! print msg, type(msg)
-        print DATA_PATH
         p = Packet()
         p.DecodePacket(msg)
 

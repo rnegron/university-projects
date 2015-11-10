@@ -1,7 +1,7 @@
 ###############################################################################
 #
 # Filename: mds_db.py
-# Author: Jose R. Ortiz and ... (hopefully some students contribution)
+# Author: Jose R. Ortiz and Raul E. Negron
 #
 # Description:
 # 	Copy client for the DFS
@@ -25,28 +25,31 @@ def copyToDFS(address, fname, path):
 	    divide in blocks and send to the data nodes.
 	"""
 
+	block_List = []
+	meta_p = Packet()
+	data_p = Packet()
+
 	# Create a connection to the data server
 	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	meta_sock.connect(address)
 
-	# Read file
+	# Read file and get size
 	with open(fname, 'rb') as f:
 		fileData = f.read()
-
-	fsize = len(fileData)
+		fsize = len(fileData)
 
 	# Create a Put packet with the fname and the length of the data,
 	# and send it to the metadata server
-	meta_p = Packet()
 	meta_p.BuildPutPacket(fname, fsize)
 	meta_sock.sendall(meta_p.getEncodedPacket())
 
+	# Receive the available data nodes
 	msg = meta_sock.recv(1024)
-	resp = Packet()
 
-	# If no error or if file already exists
+	# If no error and if file does not already exist
 	try:
 		# Get the list of data nodes.
+		resp = Packet()
 		resp.DecodePacket(msg)
 
 	# The received data is not a packet...
@@ -54,38 +57,57 @@ def copyToDFS(address, fname, path):
 		print "ERROR: Possible duplicate file."
 		return
 
+	# Store the available data nodes
 	nodeList = resp.getDataNodes()
 
-	# Divide the file in blocks
-	# possibly: divide normally then add 1 if not divisible
+	# Define the file split length (block size)
 	if len(nodeList) > 0:
-		blockSize = ceiling(float(fsize) / len(nodeList))
+		blockSize = fsize / len(nodeList)
+
+		# if the file size is an odd number of bytes, add an extra to be safe
+		if blockSize % 2 is not 0:
+			blockSize += 1
 	else:
-		print "NodeList:", nodeList
+		print "ERROR: No available data nodes."
 		return
 
-	blockList = []
-	for i in range(len(nodeList)):
-		blockList.append('block{}'.format(i + 1))
-
-	# Send the blocks to the data servers
-	data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	data_p = Packet()
-
+	# Send the blocks to the data servers, one by one
 	for node in nodeList:
+		# Establish a connection to the data node
+		data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		data_sock.connect(tuple(node))
-		data_p.BuildPutPacket(blockList.pop(), blockSize)
+
+		# Split the blocks by string slices
+		block = fileData[:blockSize]
+
+		# Send the block to the current data node
+		data_p.BuildPutPacket(fname, len(block))
 		data_sock.sendall(data_p.getEncodedPacket())
+
+		# Send the actual data
+		data_sock.sendall(block)
+
+		# Move on to the next block by string slice
+		fileData = fileData[blockSize:]
 
 		# Receive the data block id
 		msg = data_sock.recv(1024)
 		resp = Packet()
 		resp.DecodePacket(msg)
 
-		print "GOT ID BACK! ITS {}".format(resp.getBlockID())
+		# Add the information of the current node to the block list
+		addr = node[0]
+		port = node[1]
+		block_List.append([addr, port, str(resp.getBlockID())])
+
+	print 'Done sending to nodes. Block list...'
+	print block_List
 
 	# Notify the metadata server where the blocks are saved.
-	# meta_p.BuildDataBlockPacket()
+	meta_p = Packet()
+	meta_p.BuildDataBlockPacket(fname, block_List)
+	meta_sock.sendall(meta_p.getEncodedPacket())
+	print 'Sent!'
 
 
 # def copyFromDFS(address, fname, path):
