@@ -28,8 +28,9 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
 		"""
 		try:
             # try and add the data node to the data base
+            # return ACK if successful, DUP is data node is not unique
 			if db.AddDataNode(p.getAddr(), p.getPort()):
-                            print 'data node registered'
+                            #! print 'data node registered'
                             self.request.sendall("ACK")
 			else:
 				self.request.sendall("DUP")
@@ -40,6 +41,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
         """Get the file list from the database and send list to client"""
 
         try:
+            # build a respone packet to list all files currently in the db
             pResp = Packet()
             pResp.BuildListResponse(db.GetFiles())
             self.request.sendall(pResp.getEncodedPacket())
@@ -51,10 +53,14 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
     	   the file.
     	"""
 
+        # get file name and size from the packet
     	fname, fsize = p.getFileInfo()
 
+        # try and insert the file into the db
     	if db.InsertFile(fname, fsize):
-            print "file '{}' inserted in db".format(fname)
+            #! print "file '{}' inserted in db".format(fname)
+
+            # since file entry was successful, send back available data nodes
             pResp = Packet()
             pResp.BuildPutResponse(db.GetDataNodes())
             self.request.sendall(pResp.getEncodedPacket())
@@ -72,7 +78,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
 
         if fsize:
             pResp = Packet()
-            pResp.BuildGetResponse(farr, fize)
+            pResp.BuildGetResponse(farr, fsize)
             self.request.sendall(pResp.getEncodedPacket())
 
         else:
@@ -81,7 +87,6 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
     def handle_blocks(self, db, p):
         """Add the data blocks to the file inode"""
 
-        print "Inside the block handler..."
         fname = p.getFileName()
         fblocks = p.getDataBlocks()
 
@@ -126,7 +131,6 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
             self.handle_get(db, p)
 
         elif cmd == "dblks":
-            print 'BLOCKS!!'
             # Client sending data blocks for file
             self.handle_blocks(db, p)
 

@@ -77,15 +77,18 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
         resp.BuildGetDataBlockPacket(blockid)
         self.request.sendall(resp.getEncodedPacket())
 
-    # def handle_get(self, p):
-    #
-    #     # Get the block id from the packet
-    #     blockid = p.getBlockID()
-    #
-    #     # Read the file with the block id data
-    #     # Send it back to the copy client.
-    #
-    #     # Fill code
+    def handle_get(self, p):
+
+        # Get the block id from the packet
+        blockid = p.getBlockID()
+
+        # Read the file with the block id data
+        print 'Reading from blockid:', blockid
+        with open(os.path.join(DATA_PATH, blockid + '.dat'), 'rb') as f:
+            fileData = f.read()
+
+        # Send it back to the copy client.
+        self.request.sendall(fileData)
 
     def handle(self):
         msg = self.request.recv(1024)

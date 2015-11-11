@@ -11,7 +11,6 @@
 import socket
 import sys
 import os.path
-from math import ceil as ceiling
 
 from Packet import *
 
@@ -27,7 +26,6 @@ def copyToDFS(address, fname, path):
 
 	block_List = []
 	meta_p = Packet()
-	data_p = Packet()
 
 	# Create a connection to the data server
 	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -37,6 +35,9 @@ def copyToDFS(address, fname, path):
 	with open(fname, 'rb') as f:
 		fileData = f.read()
 		fsize = len(fileData)
+
+	# Change fname to that of the target directory
+	fname = os.path.join(path, os.path.basename(fname))
 
 	# Create a Put packet with the fname and the length of the data,
 	# and send it to the metadata server
@@ -81,6 +82,9 @@ def copyToDFS(address, fname, path):
 		block = fileData[:blockSize]
 
 		# Send the block to the current data node
+		data_p = Packet()
+		print 'Sending:', fname + ' ' + str(len(block))
+		print 'To:', node
 		data_p.BuildPutPacket(fname, len(block))
 		data_sock.sendall(data_p.getEncodedPacket())
 
@@ -100,36 +104,79 @@ def copyToDFS(address, fname, path):
 		port = node[1]
 		block_List.append([addr, port, str(resp.getBlockID())])
 
-	print 'Done sending to nodes. Block list...'
-	print block_List
-
 	# Notify the metadata server where the blocks are saved.
 	meta_p = Packet()
+	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	meta_sock.connect(address)
+
 	meta_p.BuildDataBlockPacket(fname, block_List)
 	meta_sock.sendall(meta_p.getEncodedPacket())
-	print 'Sent!'
 
 
-# def copyFromDFS(address, fname, path):
-# 	""" Contact the metadata server to ask for the file blocks of
-# 	    the file fname.  Get the data blocks from the data nodes.
-# 	    Saves the data in path.
-# 	"""
-#
-#    	# Contact the metadata server to ask for information of fname
-#
-# 	# Fill code
-#
-# 	# If there is no error response Retreive the data blocks
-#
-# 	# Fill code
-#
-#     	# Save the file
-#
-# 	# Fill code
+def copyFromDFS(address, fname, path):
+	""" Contact the metadata server to ask for the file blocks of
+	    the file fname.  Get the data blocks from the data nodes.
+	    Saves the data in path.
+	"""
+
+   	# Contact the metadata server
+	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+	try:
+		meta_sock.connect(address)
+	except:
+		print 'ERROR! Could not connect to', address
+
+	# Ask for information of fname
+	meta_p = Packet()
+	meta_p.BuildGetPacket(fname)
+	meta_sock.sendall(meta_p.getEncodedPacket())
+
+	msg = meta_sock.recv(1024)
+
+	# If there is no error, retreive the data blocks
+	try:
+		resp = Packet()
+		resp.DecodePacket(msg)
+
+	except:
+		print 'ERROR! Could not retrieve the data blocks for', fname
+		print 'Remember to specify the absolute DFS path!'
+		return
+
+	nodeList = resp.getDataNodes()
+	fsize = resp.getFileSize()
+
+	bufsize = fsize / len(nodeList) + 1
+	data = ''
+
+	# Get the data from the data nodes which have it
+
+	for node in nodeList:
+		addr = node[0]
+		port = node[1]
+		blockid = node[2]
+
+		data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		data_sock.connect((addr, port))
+
+		data_p = Packet()
+
+		data_p.BuildGetDataBlockPacket(blockid)
+		data_sock.sendall(data_p.getEncodedPacket())
+
+		msg = data_sock.recv(bufsize)
+
+		print 'Got msg: ' + msg + " from port " + str(port)
+		data += msg
+
+    # Save the file
+	with open(path, 'wb') as f:
+		f.write(data)
+
 
 if __name__ == "__main__":
-#	client("localhost", 8000)
+
 	if len(sys.argv) < 3:
 		usage()
 

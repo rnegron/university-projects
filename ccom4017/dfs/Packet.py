@@ -102,6 +102,11 @@ class Packet:
         if self.packet.has_key("fname"):
             return self.packet["fname"]
 
+    def getFileSize(self):
+        """Returns the file size in a packet."""
+        if self.packet.has_key("fsize"):
+            return self.packet["fsize"]
+
     def BuildGetResponse(self, metalist, fsize):
         """Builds a list of data node servers with the blocks of a file, and file size."""
         self.packet["servers"] = metalist
