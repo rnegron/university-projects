@@ -6,7 +6,6 @@
 # Description:
 # 	Copy client for the DFS
 #
-#
 
 import socket
 import sys
@@ -24,14 +23,14 @@ def copyToDFS(address, fname, path):
 	    divide in blocks and send to the data nodes.
 	"""
 
-	block_List = []
-	meta_p = Packet()
+	# List which will hold the information of the data blocks
+	blockList = []
 
 	# Create a connection to the data server
 	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	meta_sock.connect(address)
 
-	# Read file and get size
+	# Read source file and get size
 	with open(fname, 'rb') as f:
 		fileData = f.read()
 		fsize = len(fileData)
@@ -41,6 +40,7 @@ def copyToDFS(address, fname, path):
 
 	# Create a Put packet with the fname and the length of the data,
 	# and send it to the metadata server
+	meta_p = Packet()
 	meta_p.BuildPutPacket(fname, fsize)
 	meta_sock.sendall(meta_p.getEncodedPacket())
 
@@ -66,7 +66,7 @@ def copyToDFS(address, fname, path):
 		blockSize = fsize / len(nodeList)
 
 		# if the file size is an odd number of bytes, add an extra to be safe
-		if blockSize % 2 is not 0:
+		if fsize % 2 is not 0:
 			blockSize += 1
 	else:
 		print "ERROR: No available data nodes."
@@ -81,12 +81,20 @@ def copyToDFS(address, fname, path):
 		# Split the blocks by string slices
 		block = fileData[:blockSize]
 
+		print 'Sending {} bytes to port {}'.format(len(block), node[1])
+
 		# Send the block to the current data node
 		data_p = Packet()
-		print 'Sending:', fname + ' ' + str(len(block))
-		print 'To:', node
 		data_p.BuildPutPacket(fname, len(block))
 		data_sock.sendall(data_p.getEncodedPacket())
+
+		# Wait for acknowledgement from client
+		msg = data_sock.recv(1024)
+
+		# Check if data nodes acknowledged; if not, return
+		if msg != "OK":
+			print "ERROR! Could not send file information to data node", node
+			return
 
 		# Send the actual data
 		data_sock.sendall(block)
@@ -102,14 +110,17 @@ def copyToDFS(address, fname, path):
 		# Add the information of the current node to the block list
 		addr = node[0]
 		port = node[1]
-		block_List.append([addr, port, str(resp.getBlockID())])
+		blockList.append([addr, port, str(resp.getBlockID())])
 
-	# Notify the metadata server where the blocks are saved.
-	meta_p = Packet()
+	# Connect to the metadata server
 	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	meta_sock.connect(address)
 
-	meta_p.BuildDataBlockPacket(fname, block_List)
+	# Build a packet with the data block info
+	meta_p = Packet()
+	meta_p.BuildDataBlockPacket(fname, blockList)
+
+	# Notify the metadata server where the blocks are saved
 	meta_sock.sendall(meta_p.getEncodedPacket())
 
 
@@ -121,7 +132,6 @@ def copyFromDFS(address, fname, path):
 
    	# Contact the metadata server
 	meta_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 	try:
 		meta_sock.connect(address)
 	except:
@@ -132,6 +142,7 @@ def copyFromDFS(address, fname, path):
 	meta_p.BuildGetPacket(fname)
 	meta_sock.sendall(meta_p.getEncodedPacket())
 
+	# Receive information of fname
 	msg = meta_sock.recv(1024)
 
 	# If there is no error, retreive the data blocks
@@ -144,36 +155,59 @@ def copyFromDFS(address, fname, path):
 		print 'Remember to specify the absolute DFS path!'
 		return
 
+	# No error, get the available data nodes and fsize
 	nodeList = resp.getDataNodes()
 	fsize = resp.getFileSize()
 
-	bufsize = fsize / len(nodeList) + 1
+	# Define the maximum blockSize based on how many data nodes there are
+	blockSize = fsize / len(nodeList)
+	if fsize % 2 is not 0:
+		blockSize += 1
+
+	# String which will hold all the binary data for fname
 	data = ''
 
-	# Get the data from the data nodes which have it
-
+	# Get the data from each of the data nodes
 	for node in nodeList:
 		addr = node[0]
 		port = node[1]
 		blockid = node[2]
 
+		# Connect to the data node
 		data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		data_sock.connect((addr, port))
 
+		# Build a GetDataBlock packet
 		data_p = Packet()
-
 		data_p.BuildGetDataBlockPacket(blockid)
+
+		# Send the request to the current data node
 		data_sock.sendall(data_p.getEncodedPacket())
 
-		msg = data_sock.recv(bufsize)
+		# Create a temporary string to buffer incoming data
+		buff = ''
 
-		print 'Got msg: ' + msg + " from port " + str(port)
-		data += msg
+		# While there is still data to receive..
+		while True:
+			# If the buffer completes the data, break
+			if len(data) + len(buff) >= fsize:
+				break
 
-    # Save the file
-	with open(path, 'wb') as f:
+			# If the buffer is becoming larger than the blockSize, break
+			if len(buff) >= blockSize:
+				break
+
+			# Receive the data from the current data node
+			buff += data_sock.recv(4096)
+
+		print 'Got {} bytes from port {}'.format(len(buff), port)
+
+		# Append the received data to the data string
+		data += buff
+
+    # Save the file once all the data is received
+	with open(path, 'ab') as f:
 		f.write(data)
-
 
 if __name__ == "__main__":
 

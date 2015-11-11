@@ -6,8 +6,6 @@
 # Description:
 # 	MySQL support library for the DFS project. Database info for the
 #       metadata server.
-#
-# Please modify globals with appropiate info.
 
 from mds_db import *
 from Packet import *
@@ -30,7 +28,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
             # try and add the data node to the data base
             # return ACK if successful, DUP is data node is not unique
 			if db.AddDataNode(p.getAddr(), p.getPort()):
-                            #! print 'data node registered'
+                            print 'data node registered'
                             self.request.sendall("ACK")
 			else:
 				self.request.sendall("DUP")
@@ -105,7 +103,7 @@ class MetadataTCPHandler(SocketServer.BaseRequestHandler):
         p = Packet()
 
         # Receive a msg from the list, data-node, or copy clients
-        msg = self.request.recv(1024)
+        msg = self.request.recv(524,288)
 
         # Decode the packet received
         p.DecodePacket(msg)
@@ -147,6 +145,4 @@ if __name__ == "__main__":
 
     server = SocketServer.TCPServer((HOST, PORT), MetadataTCPHandler)
 
-    # Activate the server; this will keep running until you
-    # interrupt the program with Ctrl-C
     server.serve_forever()

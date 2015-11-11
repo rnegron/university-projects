@@ -30,6 +30,7 @@ def register(meta_ip, meta_port, data_ip, data_port):
     # Establish connection
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+    # try and connect to the metadata server
     try:
         response = "NAK"
         sp = Packet()
@@ -60,15 +61,23 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
         """
         # Receive the data block info.
         fname, fsize = p.getFileInfo()
-        print 'Got: fname: {}, fsize: {}'.format(fname, fsize)
 
-        # Receive the data
-        data = self.request.recv(1024)
+        # Acknowledge the received info
+        self.request.send("OK")
+
+        # Strng variable which holds the soon to be received binary data
+        data = ''
+
+        # Keep receiving data until it is complete
+        while len(data) < fsize:
+            data += self.request.recv(4096)
 
         # Generates an unique block id.
         blockid = str(uuid.uuid1())
 
-        print 'Writing {} to {}'.format(fname, os.path.join(DATA_PATH, blockid + '.dat'))
+        print 'Got {} bytes'.format(len(data))
+
+        # Write the data to the local chunk using the .dat extension
         with open(os.path.join(DATA_PATH, blockid + '.dat'), 'wb') as f:
             f.write(data)
 
@@ -83,20 +92,25 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
         blockid = p.getBlockID()
 
         # Read the file with the block id data
-        print 'Reading from blockid:', blockid
         with open(os.path.join(DATA_PATH, blockid + '.dat'), 'rb') as f:
             fileData = f.read()
 
         # Send it back to the copy client.
         self.request.sendall(fileData)
 
+        print 'Sent {} bytes'.format(len(fileData))
+
     def handle(self):
-        msg = self.request.recv(1024)
-        #! print msg, type(msg)
+        """Receive a request from a client and call the corresponding
+            handler functions, either put or get
+        """
+
+        msg = self.request.recv(524, 288)
+
         p = Packet()
         p.DecodePacket(msg)
-
         cmd = p.getCommand()
+
         if cmd == "put":
             self.handle_put(p)
 
@@ -135,6 +149,4 @@ if __name__ == "__main__":
     register("localhost", META_PORT, HOST, PORT)
     server = SocketServer.TCPServer((HOST, PORT), DataNodeTCPHandler)
 
-	# Activate the server; this will keep running until you
-	# interrupt the program with Ctrl-C
     server.serve_forever()
