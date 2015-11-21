@@ -32,8 +32,10 @@ def copyToDFS(address, fname, path):
 
 	# Read source file and get size
 	with open(fname, 'rb') as f:
+		print 'Reading file...'
 		fileData = f.read()
 		fsize = len(fileData)
+		print 'Done reading'
 
 	# Change fname to that of the target directory
 	fname = os.path.join(path, os.path.basename(fname))
@@ -187,6 +189,11 @@ def copyFromDFS(address, fname, path):
 		# Create a temporary string to buffer incoming data
 		buff = ''
 
+                # Simple progress bar
+	        loading = {0:'/', 1:'-', 2:'\\', 3:'|'}
+	        counter = 0
+
+
 		# While there is still data to receive..
 		while True:
 			# If the buffer completes the data, break
@@ -197,10 +204,14 @@ def copyFromDFS(address, fname, path):
 			if len(buff) >= blockSize:
 				break
 
+			sys.stdout.write('\rReceiving... {}'.format(loading[counter]))
+
 			# Receive the data from the current data node
 			buff += data_sock.recv(4096)
 
-		print 'Got {} bytes from port {}'.format(len(buff), port)
+			sys.stdout.flush()
+
+		print '\nGot {} bytes from port {}'.format(len(buff), port)
 
 		# Append the received data to the data string
 		data += buff

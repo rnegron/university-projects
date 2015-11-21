@@ -68,18 +68,27 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
         # Strng variable which holds the soon to be received binary data
         data = ''
 
+        # Simple progress bar
+        loading = {0:'/', 1:'-', 2:'\\', 3:'|'}
+        counter = 0
+
         # Keep receiving data until it is complete
         while len(data) < fsize:
+            sys.stdout.write('\rReceiving... {}'.format(loading[counter]))
             data += self.request.recv(4096)
+            counter = (counter + 1) % 4
+            sys.stdout.flush()
 
         # Generates an unique block id.
         blockid = str(uuid.uuid1())
 
-        print 'Got {} bytes'.format(len(data))
+        print '\nGot {} bytes'.format(len(data))
 
         # Write the data to the local chunk using the .dat extension
         with open(os.path.join(DATA_PATH, blockid + '.dat'), 'wb') as f:
+            print 'Writing...'
             f.write(data)
+            print 'Done writing'
 
         # Send the block id back
         resp = Packet()
@@ -93,7 +102,9 @@ class DataNodeTCPHandler(SocketServer.BaseRequestHandler):
 
         # Read the file with the block id data
         with open(os.path.join(DATA_PATH, blockid + '.dat'), 'rb') as f:
+            print 'Reading...'
             fileData = f.read()
+            print 'Done reading'
 
         # Send it back to the copy client.
         self.request.sendall(fileData)

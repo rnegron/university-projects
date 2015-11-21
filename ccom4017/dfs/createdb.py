@@ -1,7 +1,7 @@
 import sqlite3
 import shutil
 from glob import glob
-from os import remove
+from os import remove, path
 
 
 def clean_up():
@@ -13,7 +13,8 @@ def clean_up():
     for folder in node_folders:
         shutil.rmtree(folder, ignore_errors=True)
 
-    remove('dfs.db')
+    if path.exists('dfs.db'):
+        remove('dfs.db')
 
 def start_db():
     conn = sqlite3.connect("dfs.db")
