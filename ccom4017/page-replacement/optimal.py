@@ -22,7 +22,6 @@ def optimize(current_page, future_pages):
     if len(future_pages) == 0:
         #! print 'Since there are no more future requests, arbirtarily removing the oldest page in memory'
         memory.pop(0)
-        memory.append(current_page)
 
     else:
         #! print 'Need to put {} in {} and checking {}'.format(current_page, memory, future_pages)
@@ -45,7 +44,7 @@ def optimize(current_page, future_pages):
                 memory_dict[page] = idx
 
         # The optimal page to remove from memory is the one whose index
-        # in the future page list is the max.
+        # in the future page list is the largest (the max()).
         optimal = max(memory_dict, key=memory_dict.get)
 
         #! print "Optimally, I should remove", optimal
@@ -53,7 +52,7 @@ def optimize(current_page, future_pages):
 
 
 def main():
-    PAGE_AMOUNT = int(argv[1])
+    MEMORY_SIZE = int(argv[1])
     FILE = argv[2]
     page_faults = 0
 
@@ -67,7 +66,7 @@ def main():
     for idx, page in enumerate(page_requests):
         if page not in memory:
             #! print 'Page Fault #{} with page: {}'.format(page_faults + 1, page)
-            if len(memory) >= PAGE_AMOUNT:
+            if len(memory) >= MEMORY_SIZE:
                 optimize(page, page_requests[idx + 1:])
 
             memory.append(page)

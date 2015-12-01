@@ -46,7 +46,7 @@ def second_chance(current_page):
 
 
 def main():
-    PAGE_AMOUNT = int(argv[1])
+    MEMORY_SIZE = int(argv[1])
     FILE = argv[2]
     page_faults = 0
 
@@ -63,7 +63,7 @@ def main():
             #! print 'Page Fault #{} with page: {}'.format(page_faults, page)
 
             # If there is no room in memory, run the second chance algorithm
-            if len(memory) >= PAGE_AMOUNT:
+            if len(memory) >= MEMORY_SIZE:
                 page_fault_fixed = False
 
                 # The algorithm will run until page_fault_fixed is True
