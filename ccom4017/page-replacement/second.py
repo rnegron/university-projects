@@ -8,7 +8,7 @@
 
 from sys import argv
 memory = []
-page_dict = {} # Dictionary of the form PAGE:R_BIT
+page_dict = {}  # Dictionary of the form PAGE:R_BIT
 
 
 def second_chance(current_page):
@@ -24,24 +24,27 @@ def second_chance(current_page):
 
     # For every page in a copy of memory, we must check
     # if it is a possible candidate for removal
-    for page in memory[:]:
+    for i in xrange(len(memory)):
+
+        # Always check the page at the beginning of the list
+        page = memory[0]
 
         # If the page has R == 1, then we must clear the bit and put the page
         # at the tail of the list
         if page_dict[page] == 1:
             #! print 'Clearing R bit from page', page
             page_dict[page] = 0
-            memory.remove(page)
-            memory.append(page)
+            memory.append(memory.pop(0))
 
         # If the page has R == 0, then that page should be removed to make
         # space for current_page.
         else:
             #! print 'Removing page {} to insert page {}'.format(page, current_page)
-            memory.remove(page)
+            memory.pop(0)
             memory.append(current_page)
             page_dict[current_page] = 1
             return True
+
     return False
 
 
@@ -72,11 +75,11 @@ def main():
 
             # If there is sufficient room in memory, just place the page in
             else:
-                page_dict[page] = 1 # Set R bit of incoming page
+                page_dict[page] = 1  # Set R bit of incoming page
                 memory.append(page)
 
     # Finally, output the number of page faults that occured
-    print "Page Faults:{}".format(page_faults)
+    print page_faults
 
 if __name__ == "__main__" and len(argv) == 3:
     main()

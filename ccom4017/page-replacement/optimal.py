@@ -73,7 +73,7 @@ def main():
             page_faults += 1
 
     # Finally, output the number of page faults that occured
-    print 'Page Faults:{}'.format(page_faults)
+    print page_faults
 
 if __name__ == "__main__" and len(argv) == 3:
     main()

@@ -33,13 +33,13 @@ Both `optimal.py` and `second.py` can be run as follows:
 
 `$ optimal.py 10 input.txt`
 
-`wsclock.py` requieres and additional argument, `Tau`, which is placed after the `<Maximum memory space>` argument.
+`wsclock.py` requires and additional argument, `Tau`, which is placed after the `<Maximum memory space>` argument.
 
 **For example:**
 
 `$ wsclock.py 10 5 input.txt`
 
-Where `5` correspondonds to the parameter `Tau`.
+Where `5` corresponds to the parameter `Tau`.
 
 --
 
@@ -47,7 +47,7 @@ For every script, the output is
 
 `$ Page Faults:<value>`
 
-where `<value>` is the number of page faults that occured using the specified page replacement algorithm with the specified memory space and the page access sequence provided.
+where `<value>` is the number of page faults that occurred using the specified page replacement algorithm with the specified memory space and the page access sequence provided.
 
 ### Who helped
 

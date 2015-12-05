@@ -224,7 +224,7 @@ def main():
                 clock_list.referenced(page, should_write=False)
 
     # Finally, output the number of page faults that occured
-    print "Page Faults:{}".format(page_faults)
+    print page_faults
 
 if __name__ == "__main__" and len(argv) == 4:
     main()
