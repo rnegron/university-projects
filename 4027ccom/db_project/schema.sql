@@ -1,108 +1,113 @@
 CREATE TABLE `Obras` (
-	`Obra ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Teatro ID` INT(4) NOT NULL,
-	`Caja` INT(2) NOT NULL,
-	`Número de Producción` INT(4) NOT NULL UNIQUE,
-	`Título` VARCHAR(128) NOT NULL,
-	`Año` INT(4) NOT NULL,
-	`Notas` VARCHAR(500),
-	PRIMARY KEY (`Obra ID`)
+	`obra_id` INT(4) AUTO_INCREMENT,
+	`teatro_id` INT(4) NOT NULL,
+	`caja` INT(2) NOT NULL,
+	`num_de_prod` INT(4) NOT NULL,
+	`titulo` VARCHAR(1024) NOT NULL,
+	`año` INT(4) NOT NULL,
+	`notas` VARCHAR(4096),
+	PRIMARY KEY (`obra_id`)
 );
 
 CREATE TABLE `Teatros` (
-	`Teatro ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Nombre` VARCHAR(32) NOT NULL UNIQUE,
-	PRIMARY KEY (`Teatro ID`)
+	`teatro_id` INT(4) AUTO_INCREMENT,
+	`nombre_teatro` VARCHAR(32) NOT NULL UNIQUE,
+	PRIMARY KEY (`teatro_id`)
 );
 
 CREATE TABLE `Autores` (
-	`Autor ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Primer Nombre` VARCHAR(12) NOT NULL,
-	`Segundo Nombre` VARCHAR(12),
-	`Apellido` VARCHAR(32) NOT NULL,
-	PRIMARY KEY (`Autor ID`)
+	`autor_id` INT(4) AUTO_INCREMENT,
+	`primer_nombre` VARCHAR(12) NOT NULL,
+	`segundo_nombre` VARCHAR(12),
+	`apellido` VARCHAR(32) NOT NULL,
+    `nombre_completo` VARCHAR(56) GENERATED ALWAYS as (CONCAT(primer_nombre, ' ', apellido)) NOT NULL,
+	PRIMARY KEY (`autor_id`)
 );
 
 CREATE TABLE `Directores` (
-	`Director ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Primer Nombre` VARCHAR(12) NOT NULL,
-	`Segundo Nombre` VARCHAR(12),
-	`Apellido` VARCHAR(32) NOT NULL,
-	PRIMARY KEY (`Director ID`)
+	`director_id` INT(4) AUTO_INCREMENT,
+	`primer_nombre` VARCHAR(12) NOT NULL,
+	`segundo_nombre` VARCHAR(12),
+	`apellido` VARCHAR(32),
+    `nombre_completo` VARCHAR(56) GENERATED ALWAYS as (CONCAT(primer_nombre, ' ', apellido)) NOT NULL,
+	PRIMARY KEY (`director_id`)
 );
 
-CREATE TABLE `Diseñadores de Escenografía` (
-	`Diseñador ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Primer Nombre` VARCHAR(12) NOT NULL,
-	`Segundo Nombre` VARCHAR(12),
-	`Apellido` VARCHAR(32) NOT NULL,
-	PRIMARY KEY (`Diseñador ID`)
+CREATE TABLE `Diseñadores_de_Escenografia` (
+	`d_id` INT(4) AUTO_INCREMENT,
+	`primer_nombre` VARCHAR(12) NOT NULL,
+	`segundo_nombre` VARCHAR(12),
+	`apellido` VARCHAR(32),
+    `nombre_completo` VARCHAR(56) GENERATED ALWAYS as (CONCAT(primer_nombre, ' ', apellido)) NOT NULL,
+	PRIMARY KEY (`d_id`)
 );
 
-CREATE TABLE `Diseñadores de Vestuario` (
-	`Diseñador ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Primer Nombre` VARCHAR(12) NOT NULL,
-	`Segundo Nombre` VARCHAR(12),
-	`Apellido` VARCHAR(32) NOT NULL,
-	PRIMARY KEY (`Diseñador ID`)
+CREATE TABLE `Diseñadores_de_Vestuario` (
+	`d_id` INT(4) AUTO_INCREMENT,
+	`primer_nombre` VARCHAR(12) NOT NULL,
+	`segundo_nombre` VARCHAR(12),
+	`apellido` VARCHAR(32),
+    `nombre_completo` VARCHAR(56) GENERATED ALWAYS as (CONCAT(primer_nombre, ' ', apellido)) NOT NULL,
+	PRIMARY KEY (`d_id`)
 );
 
-CREATE TABLE `Diseñadores de Luces` (
-	`Diseñador ID` INT(4) NOT NULL AUTO_INCREMENT,
-	`Primer Nombre` VARCHAR(12) NOT NULL,
-	`Segundo Nombre` VARCHAR(12),
-	`Apellido` VARCHAR(32) NOT NULL,
-	PRIMARY KEY (`Diseñador ID`)
+CREATE TABLE `Diseñadores_de_Luces` (
+	`d_id` INT(4) AUTO_INCREMENT,
+	`primer_nombre` VARCHAR(12) NOT NULL,
+	`segundo_nombre` VARCHAR(12),
+	`apellido` VARCHAR(32),
+    `nombre_completo` VARCHAR(56) GENERATED ALWAYS as (CONCAT(primer_nombre, ' ', apellido)) NOT NULL,
+	PRIMARY KEY (`d_id`)
 );
 
-CREATE TABLE `Autores de Obras` (
-	`Autor ID` INT(4) NOT NULL,
-	`Obra ID` INT(4) NOT NULL,
-	PRIMARY KEY (`Autor ID`,`Obra ID`)
+CREATE TABLE `Autores_de_Obras` (
+	`autor_id` INT(4),
+	`obra_id` INT(4),
+	PRIMARY KEY (`autor_id`,`obra_id`)
 );
 
-CREATE TABLE `Directores de Obras` (
-	`Director ID` INT(4) NOT NULL,
-	`Obra ID` INT(4) NOT NULL,
-	PRIMARY KEY (`Director ID`,`Obra ID`)
+CREATE TABLE `Directores_de_Obras` (
+	`director_id` INT(4),
+	`obra_id` INT(4),
+	PRIMARY KEY (`director_id`,`obra_id`)
 );
 
-CREATE TABLE `Diseño de Luces` (
-	`Diseñador ID` INT(4) NOT NULL,
-	`Obra ID` INT(4) NOT NULL,
-	PRIMARY KEY (`Diseñador ID`,`Obra ID`)
+CREATE TABLE `Diseño_de_Luces` (
+	`d_id` INT(4),
+	`obra_id` INT(4),
+	PRIMARY KEY (`d_id`,`obra_id`)
 );
 
-CREATE TABLE `Diseño de Escenografía` (
-	`Diseñador ID` INT(4) NOT NULL,
-	`Obra ID` INT(4) NOT NULL,
-	PRIMARY KEY (`Diseñador ID`,`Obra ID`)
+CREATE TABLE `Diseño_de_Escenografía` (
+	`d_id` INT(4),
+	`obra_id` INT(4),
+	PRIMARY KEY (`d_id`,`obra_id`)
 );
 
-CREATE TABLE `Diseño de Vestuario` (
-	`Diseñador ID` INT(4) NOT NULL,
-	`Obra ID` INT(4) NOT NULL,
-	PRIMARY KEY (`Diseñador ID`,`Obra ID`)
+CREATE TABLE `Diseño_de_Vestuario` (
+	`d_id` INT(4),
+	`obra_id` INT(4),
+	PRIMARY KEY (`d_id`,`obra_id`)
 );
 
-ALTER TABLE `Obras` ADD CONSTRAINT `Obras_fk0` FOREIGN KEY (`Teatro ID`) REFERENCES `Teatros`(`Teatro ID`);
+ALTER TABLE `Obras` ADD CONSTRAINT `Obras_fk0` FOREIGN KEY (`teatro_id`) REFERENCES `Teatros`(`teatro_id`);
 
-ALTER TABLE `Autores de Obras` ADD CONSTRAINT `Autores de Obras_fk0` FOREIGN KEY (`Autor ID`) REFERENCES `Autores`(`Autor ID`);
+ALTER TABLE `Autores_de_Obras` ADD CONSTRAINT `Autores_de_Obras_fk0` FOREIGN KEY (`autor_id`) REFERENCES `Autores`(`autor_id`);
 
-ALTER TABLE `Autores de Obras` ADD CONSTRAINT `Autores de Obras_fk1` FOREIGN KEY (`Obra ID`) REFERENCES `Obras`(`Obra ID`);
+ALTER TABLE `Autores_de_Obras` ADD CONSTRAINT `Autores_de_Obras_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras`(`obra_id`);
 
-ALTER TABLE `Directores de Obras` ADD CONSTRAINT `Directores de Obras_fk0` FOREIGN KEY (`Director ID`) REFERENCES `Directores`(`Director ID`);
+ALTER TABLE `Directores_de_Obras` ADD CONSTRAINT `Directores_de_Obras_fk0` FOREIGN KEY (`director_id`) REFERENCES `Directores`(`director_id`);
 
-ALTER TABLE `Directores de Obras` ADD CONSTRAINT `Directores de Obras_fk1` FOREIGN KEY (`Obra ID`) REFERENCES `Obras`(`Obra ID`);
+ALTER TABLE `Directores_de_Obras` ADD CONSTRAINT `Directores_de_Obras_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras`(`obra_id`);
 
-ALTER TABLE `Diseño de Luces` ADD CONSTRAINT `Diseño de Luces_fk0` FOREIGN KEY (`Diseñador ID`) REFERENCES `Diseñadores de Luces`(`Diseñador ID`);
+ALTER TABLE `Diseño_de_Luces` ADD CONSTRAINT `Diseño_de_Luces_fk0` FOREIGN KEY (`d_id`) REFERENCES `Diseñadores_de_Luces`(`d_id`);
 
-ALTER TABLE `Diseño de Luces` ADD CONSTRAINT `Diseño de Luces_fk1` FOREIGN KEY (`Obra ID`) REFERENCES `Obras`(`Obra ID`);
+ALTER TABLE `Diseño_de_Luces` ADD CONSTRAINT `Diseño_de_Luces_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras`(`obra_id`);
 
-ALTER TABLE `Diseño de Escenografía` ADD CONSTRAINT `Diseño de Escenografía_fk0` FOREIGN KEY (`Diseñador ID`) REFERENCES `Diseñadores de Escenografía`(`Diseñador ID`);
+ALTER TABLE `Diseño_de_Escenografía` ADD CONSTRAINT `Diseño_de_Escenografía_fk0` FOREIGN KEY (`d_id`) REFERENCES `Diseñadores_de_Escenografia`(`d_id`);
 
-ALTER TABLE `Diseño de Escenografía` ADD CONSTRAINT `Diseño de Escenografía_fk1` FOREIGN KEY (`Obra ID`) REFERENCES `Obras`(`Obra ID`);
+ALTER TABLE `Diseño_de_Escenografía` ADD CONSTRAINT `Diseño_de_Escenografía_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras`(`obra_id`);
 
-ALTER TABLE `Diseño de Vestuario` ADD CONSTRAINT `Diseño de Vestuario_fk0` FOREIGN KEY (`Diseñador ID`) REFERENCES `Diseñadores de Vestuario`(`Diseñador ID`);
+ALTER TABLE `Diseño_de_Vestuario` ADD CONSTRAINT `Diseño_de_Vestuario_fk0` FOREIGN KEY (`d_id`) REFERENCES `Diseñadores_de_Vestuario`(`d_id`);
 
-ALTER TABLE `Diseño de Vestuario` ADD CONSTRAINT `Diseño de Vestuario_fk1` FOREIGN KEY (`Obra ID`) REFERENCES `Obras`(`Obra ID`);
+ALTER TABLE `Diseño_de_Vestuario` ADD CONSTRAINT `Diseño_de_Vestuario_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras`(`obra_id`);
