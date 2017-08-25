@@ -6,6 +6,11 @@ column_dict = dict(caja=1, año=2, prod=3, titulo=4,
              vestido=9, notas=10)
 
 problem_columns = ['autor', 'director', 'escena', 'luz', 'vestido']
+seen_names = dict()
+name_results = dict()
+for item in problem_columns:
+    seen_names[item] = []
+    name_results[item] = []
 
 def parse_names(string):
     split_string = [name.strip() for name in string.split(',')]
@@ -39,122 +44,30 @@ def parse_names(string):
 
     return names
 
-
-def insert_people(f, l1, l2, l3, entity, table_name, _id):
+def insert_people(key, entity_table, insert_table, entity_id):
     template_people = 'INSERT INTO {} (primer_nombre, segundo_nombre, apellido) VALUES {};\n\n'
     template_insert = 'INSERT INTO {} ({}_id, obra_id) VALUES ({}, {});\n\n'
 
-    d_id = 0
+    p_id = 0
+    with open('{}.sql'.format(key), 'w') as f:
+        for person in name_results[key]:
+            p_id += 1
+            for val in person.values():
+                c = val['parse']
+                primer_nombre = c.get('primero', '')
+                segundo_nombre = c.get('segundo', '')
+                apellido = c.get('apellido', '')
+                obras = (val['obras'])
 
-    check_list = l1 + l2 + l3
-    my_list = []
-    for i in range(len(check_list)):
-        my_list.append(' '.join(list(list((check_list[i].values()))[0]['parse'].values())))
+            f.write(template_people.format(entity_table, (primer_nombre, segundo_nombre, apellido)))
+            for obra in obras:
+                f.write(template_insert.format(insert_table, entity_id, p_id, obra))
 
-    D = defaultdict(list)
-    for i, item in enumerate(my_list):
-        D[item].append(i)
-
-    D = {k: v for k, v in D.items() if len(v) > 1}
-    to_do = [v for v in D.values()]
-
-    for k, v in D.items():
-        print('{}\'s repeat list (v): {}'.format(k, v))
-        bucket = v[0]
-        print('The bucket is therefore v[{}]: {}'.format(bucket, check_list[bucket][k]['obras']))
-
-        if bucket < :
-            for extension in v[1:]:
-                curr = l1[bucket][k]['obras']
-
-                if extension < :
-                    pass
-
-                elif extension < :
-                    pass
-
-                elif extension < :
-                    # print('Adding to bucket the values in {}: {}'.format(extension, l3[extension - len(l2) - len(l1) - 1][k]['obras']))
-                    # l1[bucket][k]['obras'] = curr + l3[extension - len(l2) - len(l1) - 1][k]['obras']
-                    # del(l3[extension - len(l2) - len(l1) - 1])
-                    
-        elif bucket < :
-            for extension in v[1:]:
-                curr = l1[bucket][k]['obras']
-
-                if extension < :
-                    pass
-
-                elif extension < :
-                    pass
-
-                elif extension < :
-
-        else :
-            for extension in v[1:]:
-                curr = l1[bucket][k]['obras']
-
-                if extension < :
-                    pass
-
-                elif extension < :
-                    pass
-
-                elif extension < :
-
-    # for person in l1:
-    #     d_id += 1
-    #     for val in person.values():
-    #         c = val['parse']
-    #         primer_nombre = c.get('primero', '')
-    #         segundo_nombre = c.get('segundo', '')
-    #         apellido = c.get('apellido', '')
-    #         obras = (val['obras'])
-    #
-    #     f.write(template_people.format(entity, (primer_nombre, segundo_nombre, apellido)))
-    #
-    #     for obra in obras:
-    #         pass
-    #         f.write(template_insert.format(table_name, _id, d_id, obra))
-    #
-    # for person in l2:
-    #     d_id += 1
-    #     for val in person.values():
-    #         c = val['parse']
-    #         primer_nombre = c.get('primero', '')
-    #         segundo_nombre = c.get('segundo', '')
-    #         apellido = c.get('apellido', '')
-    #         obras = (val['obras'])
-    #
-    #     f.write(template_people.format(entity, (primer_nombre, segundo_nombre, apellido)))
-    #
-    #     for obra in obras:
-    #         pass
-    #         f.write(template_insert.format(table_name, _id, d_id, obra))
-    #
-    # for person in l3:
-    #     d_id += 1
-    #     for val in person.values():
-    #         c = val['parse']
-    #         primer_nombre = c.get('primero', '')
-    #         segundo_nombre = c.get('segundo', '')
-    #         apellido = c.get('apellido', '')
-    #         obras = (val['obras'])
-    #
-    #     f.write(template_people.format(entity, (primer_nombre, segundo_nombre, apellido)))
-    #
-    #     for obra in obras:
-    #         pass
-    #         f.write(template_insert.format(table_name, _id, d_id, obra))
 
 def table_parse(f):
     results = dict()
-    seen_names = dict()
     for key in column_dict.keys():
         results[key] = []
-
-    for item in problem_columns:
-        seen_names[item] = []
 
     wb = openpyxl.load_workbook(f)
     sh = wb.get_sheet_by_name('Sheet4')
@@ -176,16 +89,31 @@ def table_parse(f):
                         full_name = ' '.join(list(name.values()))
                         if full_name not in seen_names[key]:
                             seen_names[key].append(full_name)
-                            results[key].append({full_name: {'parse':name, 'obras':[i]}})
+                            if f == 'universitario.xlsx':
+                                name_results[key].append({full_name: {'parse':name, 'obras':[i + 33]}})
+
+                            elif f == 'rodante.xlsx':
+                                name_results[key].append({full_name: {'parse':name, 'obras':[i + 33 + 305]}})
+
+                            else:
+                                name_results[key].append({full_name: {'parse':name, 'obras':[i]}})
 
                         else:
-                            for item in results[key]:
+                            for item in name_results[key]:
                                 if full_name in item.keys():
-                                    item[full_name]['obras'].append(i)
+                                    if f == 'universitario.xlsx':
+                                        item[full_name]['obras'].append(i + 33)
+
+                                    elif f == 'rodante.xlsx':
+                                        item[full_name]['obras'].append(i + 33 + 305)
+
+                                    else:
+                                        item[full_name]['obras'].append(i)
     return results
 
 
 def make_database(t1, t2, t3):
+    template_obras = 'INSERT INTO {} (teatro_id, caja, num_de_prod, titulo, año, notas) VALUES {};\n\n'
 
     caja1 = t1['caja']
     prod1 = t1['prod']
@@ -197,7 +125,7 @@ def make_database(t1, t2, t3):
     autores1 = t1['autor']
 
     caja2 = t2['caja']
-    prod2 = [i + prod1[-1] for i in range(1, len(t2['prod']))]
+    prod2 = t2['prod']
     titulo2 = t2['titulo']
     year2 = t2['año']
     notas2 = t2['notas']
@@ -207,7 +135,7 @@ def make_database(t1, t2, t3):
 
 
     caja3 = t3['caja']
-    prod3 = [i + prod2[-1] for i in range(1, len(t2['prod']))]
+    prod3 = t3['prod']
     titulo3 = t3['titulo']
     year3 = t3['año']
     notas3 = t3['notas']
@@ -216,8 +144,6 @@ def make_database(t1, t2, t3):
     autores3 = t3['autor']
 
     # Insert into Obras
-    template_obras = 'INSERT INTO {} (teatro_id, caja, num_de_prod, titulo, año, notas) VALUES {};\n\n'
-
     payload1 = zip(teatro1, caja1, prod1, titulo1, year1, notas1)
     payload2 = zip(teatro2, caja2, prod2, titulo2, year2, notas2)
     payload3 = zip(teatro3, caja3, prod3, titulo3, year3, notas3)
@@ -236,8 +162,11 @@ def make_database(t1, t2, t3):
         for query in list(payload3):
             f.write(template_obras.format('Obras', query))
 
-        insert_people(f, directors1, directors2, directors3, 'Directores', 'Directores_de_Obras', 'director')
-        # insert_people(autores1, autores2, autores3)
+        insert_people('director', 'Directores', 'Directores_de_Obras', 'director')
+        insert_people('autor', 'Autores', 'Autores_de_Obras', 'autor')
+        insert_people('escena', 'Diseñadores_de_Escenografia', 'Diseño_de_Escenografia', 'd')
+        insert_people('luz', 'Diseñadores_de_Luces', 'Diseño_de_Luces', 'd')
+        insert_people('vestido', 'Diseñadores_de_Vestuario', 'Diseño_de_Vestuario', 'd')
 
 
 if __name__ == '__main__':

@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,15 +21,14 @@
 
 DROP TABLE IF EXISTS `Autores`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Autores` (
   `autor_id` int(4) NOT NULL AUTO_INCREMENT,
   `primer_nombre` varchar(12) NOT NULL,
   `segundo_nombre` varchar(12) DEFAULT NULL,
   `apellido` varchar(40) NOT NULL,
-  `nombre_completo` varchar(56) GENERATED ALWAYS AS (concat(`primer_nombre`,' ',`apellido`)) VIRTUAL NOT NULL,
   PRIMARY KEY (`autor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +47,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Autores_de_Obras`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Autores_de_Obras` (
   `autor_id` int(4) NOT NULL,
   `obra_id` int(4) NOT NULL,
@@ -56,7 +55,7 @@ CREATE TABLE `Autores_de_Obras` (
   KEY `Autores_de_Obras_fk1` (`obra_id`),
   CONSTRAINT `Autores_de_Obras_fk0` FOREIGN KEY (`autor_id`) REFERENCES `Autores` (`autor_id`),
   CONSTRAINT `Autores_de_Obras_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras` (`obra_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,15 +74,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Directores`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Directores` (
   `director_id` int(4) NOT NULL AUTO_INCREMENT,
   `primer_nombre` varchar(12) NOT NULL,
   `segundo_nombre` varchar(12) DEFAULT NULL,
   `apellido` varchar(40) NOT NULL,
-  `nombre_completo` varchar(56) GENERATED ALWAYS AS (concat(`primer_nombre`,' ',`apellido`)) VIRTUAL NOT NULL,
   PRIMARY KEY (`director_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +100,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Directores_de_Obras`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Directores_de_Obras` (
   `director_id` int(4) NOT NULL,
   `obra_id` int(4) NOT NULL,
@@ -110,7 +108,7 @@ CREATE TABLE `Directores_de_Obras` (
   KEY `Directores_de_Obras_fk1` (`obra_id`),
   CONSTRAINT `Directores_de_Obras_fk0` FOREIGN KEY (`director_id`) REFERENCES `Directores` (`director_id`),
   CONSTRAINT `Directores_de_Obras_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras` (`obra_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,15 +127,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Diseñadores_de_Escenografia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Diseñadores_de_Escenografia` (
   `d_id` int(4) NOT NULL AUTO_INCREMENT,
   `primer_nombre` varchar(12) NOT NULL,
   `segundo_nombre` varchar(12) DEFAULT NULL,
   `apellido` varchar(40) NOT NULL,
-  `nombre_completo` varchar(56) GENERATED ALWAYS AS (concat(`primer_nombre`,' ',`apellido`)) VIRTUAL NOT NULL,
   PRIMARY KEY (`d_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -156,15 +153,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Diseñadores_de_Luces`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Diseñadores_de_Luces` (
   `d_id` int(4) NOT NULL AUTO_INCREMENT,
   `primer_nombre` varchar(12) NOT NULL,
   `segundo_nombre` varchar(12) DEFAULT NULL,
   `apellido` varchar(40) NOT NULL,
-  `nombre_completo` varchar(56) GENERATED ALWAYS AS (concat(`primer_nombre`,' ',`apellido`)) VIRTUAL NOT NULL,
   PRIMARY KEY (`d_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,15 +179,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Diseñadores_de_Vestuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Diseñadores_de_Vestuario` (
   `d_id` int(4) NOT NULL AUTO_INCREMENT,
   `primer_nombre` varchar(12) NOT NULL,
   `segundo_nombre` varchar(12) DEFAULT NULL,
   `apellido` varchar(40) NOT NULL,
-  `nombre_completo` varchar(56) GENERATED ALWAYS AS (concat(`primer_nombre`,' ',`apellido`)) VIRTUAL NOT NULL,
   PRIMARY KEY (`d_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -210,7 +205,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Diseño_de_Escenografia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Diseño_de_Escenografia` (
   `d_id` int(4) NOT NULL,
   `obra_id` int(4) NOT NULL,
@@ -218,7 +213,7 @@ CREATE TABLE `Diseño_de_Escenografia` (
   KEY `Diseño_de_Escenografia_fk1` (`obra_id`),
   CONSTRAINT `Diseño_de_Escenografia_fk0` FOREIGN KEY (`d_id`) REFERENCES `Diseñadores_de_Escenografia` (`d_id`),
   CONSTRAINT `Diseño_de_Escenografia_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras` (`obra_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,7 +232,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Diseño_de_Luces`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Diseño_de_Luces` (
   `d_id` int(4) NOT NULL,
   `obra_id` int(4) NOT NULL,
@@ -245,7 +240,7 @@ CREATE TABLE `Diseño_de_Luces` (
   KEY `Diseño_de_Luces_fk1` (`obra_id`),
   CONSTRAINT `Diseño_de_Luces_fk0` FOREIGN KEY (`d_id`) REFERENCES `Diseñadores_de_Luces` (`d_id`),
   CONSTRAINT `Diseño_de_Luces_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras` (`obra_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -264,7 +259,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Diseño_de_Vestuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Diseño_de_Vestuario` (
   `d_id` int(4) NOT NULL,
   `obra_id` int(4) NOT NULL,
@@ -272,7 +267,7 @@ CREATE TABLE `Diseño_de_Vestuario` (
   KEY `Diseño_de_Vestuario_fk1` (`obra_id`),
   CONSTRAINT `Diseño_de_Vestuario_fk0` FOREIGN KEY (`d_id`) REFERENCES `Diseñadores_de_Vestuario` (`d_id`),
   CONSTRAINT `Diseño_de_Vestuario_fk1` FOREIGN KEY (`obra_id`) REFERENCES `Obras` (`obra_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -291,7 +286,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Obras`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Obras` (
   `obra_id` int(4) NOT NULL AUTO_INCREMENT,
   `teatro_id` int(4) NOT NULL,
@@ -303,7 +298,7 @@ CREATE TABLE `Obras` (
   PRIMARY KEY (`obra_id`),
   KEY `Obras_fk0` (`teatro_id`),
   CONSTRAINT `Obras_fk0` FOREIGN KEY (`teatro_id`) REFERENCES `Teatros` (`teatro_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=477 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=477 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -322,13 +317,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Teatros`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Teatros` (
   `teatro_id` int(4) NOT NULL AUTO_INCREMENT,
   `nombre_teatro` varchar(32) NOT NULL,
   PRIMARY KEY (`teatro_id`),
   UNIQUE KEY `nombre_teatro` (`nombre_teatro`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
