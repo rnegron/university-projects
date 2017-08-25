@@ -956,3 +956,5069 @@ INSERT INTO Obras (teatro_id, caja, num_de_prod, titulo, año, notas) VALUES (3,
 
 INSERT INTO Obras (teatro_id, caja, num_de_prod, titulo, año, notas) VALUES (3, 41, 132, 'Cosas del día y Me saqué la lotería', 2017, '5-9 julio 2017 en el Carromato del Rodante en la Plaza Baldorioty frente a La Torre UPRRP.  Miércoles 5 al sábado 8 a las 8 de la noche y domingo 9 a las 4 de la tarde.');
 
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Judith', 'Franco');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (1, 1);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Ángel', 'Díaz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (2, 2);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (2, 3);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (2, 4);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (2, 5);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Nilda', '', 'González');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 5);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 6);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 71);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 72);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 73);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 79);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 80);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 81);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 82);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 83);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 85);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 86);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 87);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 88);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 90);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 91);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 92);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 93);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 94);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 98);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 99);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 100);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 101);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 102);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 103);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 104);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 106);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 107);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 108);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 109);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 110);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 111);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 113);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 120);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 121);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 123);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 125);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 127);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 128);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 129);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 135);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 136);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 138);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 141);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 142);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 143);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 145);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 351);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 353);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 356);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 357);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 359);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 361);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 362);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 363);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 364);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 365);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 376);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 377);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (3, 378);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Victoria', '', 'Espinosa');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 7);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 8);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 9);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 10);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 11);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 12);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 13);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 14);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 15);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 17);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 18);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 19);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 20);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 21);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 22);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 23);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 24);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 25);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 26);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 27);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 28);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 29);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 30);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 31);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 32);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 33);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 78);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 84);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 89);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 116);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 117);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 118);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 163);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 175);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 182);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 194);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 199);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 206);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 269);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 350);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 352);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 354);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 355);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 358);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 360);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (4, 447);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Angel', 'F.', 'Rivera');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (5, 16);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (5, 349);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Leopoldo', 'Santiago', 'Lavandero');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 34);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 35);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 36);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 37);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 38);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 39);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 40);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 41);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 42);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 43);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 44);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 45);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 46);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 47);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 48);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 49);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 50);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 51);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 52);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 53);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 54);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 55);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 56);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 57);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 58);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 339);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (6, 340);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Ludwig', '', 'Schajowicz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 59);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 60);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 61);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 62);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 63);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 64);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 65);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 68);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (7, 74);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Ángel', 'F.', 'Rivera');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (8, 66);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (8, 67);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (8, 70);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Juano', '', 'Hernández');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (9, 69);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Basil', '', 'Langton');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (10, 75);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Betty', 'Ann', 'Metz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (11, 76);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Jack', '', 'Landau');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (12, 77);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Gloria', '', 'Arjona');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (13, 95);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (13, 96);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (13, 97);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Maricusa', '', 'Ornés');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 105);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 112);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 119);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 133);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 137);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 146);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 149);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (14, 153);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', 'Gil', 'Castro');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (15, 114);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (15, 115);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Myrna', '', 'Casas');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 122);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 124);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 126);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 132);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 134);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 139);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 144);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 148);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 151);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 158);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 161);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (16, 165);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Gilda', '', 'Navarra');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 130);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 131);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 146);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 149);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 153);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 154);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 160);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 164);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 194);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 197);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 203);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 262);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (17, 370);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Dean', '', 'Zayas');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 137);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 137);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 140);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 147);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 150);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 152);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 155);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 157);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 159);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 162);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 167);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 168);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 169);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 170);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 176);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 177);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 178);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 179);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 180);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 181);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 183);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 184);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 185);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 186);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 187);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 188);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 192);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 194);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 195);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 196);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 198);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 200);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 229);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 233);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 254);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 260);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 270);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 272);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 273);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 279);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 281);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 285);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 286);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 289);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 294);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 295);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 297);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 298);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 300);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 301);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 303);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 307);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 309);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 313);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 317);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 319);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 320);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 325);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 326);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 328);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 331);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 371);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 372);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 373);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 374);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 375);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 379);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 380);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 381);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 382);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 383);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 385);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 386);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 387);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 388);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 389);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 390);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 391);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 392);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 393);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 394);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 395);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 396);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 397);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 398);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 399);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 401);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 404);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 405);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 408);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 409);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 410);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 411);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 414);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 421);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 424);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 427);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 430);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 431);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 432);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 433);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 434);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 435);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 437);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 438);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 439);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 440);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 441);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 443);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 444);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 445);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 446);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 448);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 449);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 450);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 453);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 454);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 455);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 457);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 459);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 460);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 461);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 462);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 463);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 464);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 467);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 469);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 470);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 471);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 472);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 473);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (18, 476);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Félix', 'Gómez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (19, 156);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (19, 171);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (19, 172);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (19, 311);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (19, 312);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (19, 452);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rosa', 'Luisa', 'Márquez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 166);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 194);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 205);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 256);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 280);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 292);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 296);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 384);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 400);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 416);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 417);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 418);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 419);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 420);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 425);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 428);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 436);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 442);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (20, 451);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Idalia', 'Pérez', 'Garay');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (21, 173);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (21, 293);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Abniel', '', 'Marat');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (22, 174);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (22, 190);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (22, 191);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Joey', '', 'Rivas');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (23, 189);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Eugenia', 'Mercado');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 193);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 194);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 284);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 302);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 303);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 458);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (24, 465);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('J.', '', 'Figueroa');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (25, 194);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Allan', '', 'Rivera');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (26, 194);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('N.', '', 'López');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (27, 194);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Julia', '', 'Thompson');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 194);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 302);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 303);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 317);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 328);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 458);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (28, 465);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Luis', 'Ramos Escobar');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 201);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 221);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 239);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 242);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 268);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 402);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 403);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 406);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 407);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 413);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 415);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 422);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 423);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (29, 426);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Pablo', '', 'Cabrera');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (30, 202);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Mario', '', 'Colón');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 204);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 222);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 223);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 224);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 225);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 226);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 249);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 264);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 276);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 282);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 283);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 412);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (31, 429);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'Pareja');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (32, 207);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', '', 'Sánchez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (33, 208);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Claudio', '', 'di Girolamo');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (34, 209);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Eduardo', '', 'Pavlovski');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (35, 210);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Vicente', '', 'Castro');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (36, 211);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Elena', '', 'Duvauchelle');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (37, 212);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'Rubio');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (38, 214);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Téllez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (39, 215);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Moncho', '', 'Conde');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (40, 216);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Pedro', '', 'Santaliz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (41, 217);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Zora', '', 'Moreno');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (42, 218);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (42, 248);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', '', 'Rojas');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (43, 219);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Wolf', '', 'Aniol');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (44, 220);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Adriana', '', 'Pantoja');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (45, 227);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (45, 228);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (45, 232);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (45, 265);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('César', '', 'Bernard');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (46, 230);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('César', '', 'Olivo');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (47, 230);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Ricard', '', 'Salvat');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (48, 231);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('COLECTIVO', '', 'N/A');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (49, 234);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Frank', '', 'Marrero');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (50, 235);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Oscar', '', 'Giner');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (51, 236);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Colectivo', '', 'N/A');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (52, 237);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (52, 246);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'A.', 'Ortega');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (53, 240);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rubén', '', 'Yáñez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (54, 241);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', 'Carlos', 'Sánchez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (55, 243);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Alejandro', '', 'Tosatti');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (56, 244);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Edgar', '', 'Quiles');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (57, 245);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Josean', '', 'Ortiz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (58, 247);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Costa', '', 'Palamides');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (59, 250);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Jerry', '', 'Scott');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (60, 251);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('César', '', 'Oliva');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (61, 255);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (61, 299);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (61, 310);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (61, 452);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', 'Luis', 'Acevedo');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (62, 257);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Adriana', '', 'Pantojas');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (63, 258);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Pedro', '', 'Rodríguez');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (64, 259);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (64, 263);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (64, 278);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Teófilo', '', 'Torres');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (65, 261);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Carmelo', 'Santana', 'Mojica');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (66, 271);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (66, 324);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Freddy', '', 'Acevedo');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (67, 274);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Jorge', 'Luis', 'Torres');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (68, 275);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Norman', '', 'Santiago');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (69, 277);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Creación', '', 'Colectiva');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (70, 280);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Jorge', '', 'Rodulfo');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (71, 287);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (71, 304);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (71, 314);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (71, 327);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (71, 475);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'Vando');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (72, 288);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (72, 293);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (72, 305);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (72, 311);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (72, 332);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (72, 474);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rosalba', '', 'Rolón');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (73, 290);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Lorge', '', 'Merced');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (74, 290);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Christopher', '', 'Olsen');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (75, 306);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (75, 315);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (75, 323);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (75, 333);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rosalina', '', 'Perales');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (76, 306);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (76, 333);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Arístides', '', 'Vargas');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (77, 308);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Verónica', '', 'Ortiz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (78, 315);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Rosabel', '', 'Otón');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (79, 316);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (79, 322);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (79, 338);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (79, 456);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', 'Augusto', 'Montijo');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (80, 318);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Jacqueline', '', 'Duprey');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (81, 321);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (81, 466);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (81, 468);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Sylvia', '', 'Boffill');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (82, 323);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Heriberto', '', 'Feliciano');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (83, 329);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (83, 330);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (83, 335);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Edgar', '', 'García');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (84, 334);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Carola', '', 'García');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (85, 336);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Sylvia', '', 'Bofill');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (86, 337);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Angel', 'Díaz');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (87, 341);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (87, 342);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (87, 343);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (87, 344);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Cipriano', 'Rivas', 'Cherif');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (88, 345);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (88, 346);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (88, 347);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (88, 348);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'M.', 'Lacomba');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (89, 366);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (89, 367);
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (89, 368);
+
+INSERT INTO Directores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'de Jesús');
+
+INSERT INTO Directores_de_Obras (director_id, obra_id) VALUES (90, 369);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Mark', '', 'Twain');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (1, 1);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Mauricio', '', 'Maeterlinck');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (2, 2);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'del Valle Inclán');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (3, 3);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (3, 128);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (3, 162);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (3, 298);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (3, 457);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rabindranath', '', 'Tagore');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (4, 4);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Joseph', 'Braham', 'White');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (5, 5);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jones', 'Gardner', 'Helmann');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (6, 6);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Lorna', 'Williamson', 'Talbot');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (7, 6);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Louise', '', 'Sanders');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (8, 7);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (8, 8);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Engelbert', '', 'Humperdink');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (9, 9);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carmen', '', 'Natalia');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (10, 10);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Don', '', 'Totheroh');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (11, 11);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (11, 12);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Alejandro', '', 'Casona');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 13);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 18);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 43);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 51);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 73);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 123);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 194);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 307);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 339);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 346);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 347);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 353);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 366);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 378);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (12, 448);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Winthrop', '', 'Ames');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (13, 14);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rachel', '', 'Field');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (14, 15);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eugenio', '', "O'Neill");
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (15, 16);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Leandro', 'Fernández', 'de Moratín');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (16, 17);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (16, 19);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (16, 27);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Stuart', '', 'Walker');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (17, 20);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Anónimo', 'francés', 'del S. XV');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (18, 21);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Charlotte', '', 'Chorpenning');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (19, 22);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Federico', 'García', 'Lorca');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 23);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 24);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 32);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 37);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 67);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 78);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 112);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 150);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 157);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 163);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 260);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 268);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 269);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 272);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 309);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 341);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 345);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 355);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 357);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 360);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 361);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 372);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 390);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 410);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 447);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 450);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 473);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 474);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (20, 475);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Josephine', 'Preston', 'Peabody');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (21, 25);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Cuento', '', 'de André Hellén');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (22, 26);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Luis', 'Rafael', 'Sánchez');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (23, 28);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (23, 94);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (23, 137);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Inés', 'M.A.', 'Zarri');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (24, 28);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Atilio', 'A.', 'Veronelli');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (25, 28);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Enrique', '', 'Pongetti');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (26, 28);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Joracy', '', 'Camargo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (27, 28);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Victoria', '', 'Espinosa');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (28, 29);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (28, 199);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Gerhart', '', 'Hauptman');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (29, 30);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (29, 91);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('George', 'C.', 'Hazelton');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (30, 31);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('J.', 'Harry', 'Benrimo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (31, 31);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Margaret', 'H.', 'Yates');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (32, 33);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Serge', '', 'Prokofiev');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (33, 33);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Enrique', '', 'Guastavino');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (34, 34);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Bernard', '', 'Dryer');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (35, 35);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'Sender');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (36, 36);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jacinto', '', 'Grau');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (37, 38);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (37, 369);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('César', 'M.', 'Corrada');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (38, 39);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Francisco', '', 'Arriví');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (39, 40);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (39, 86);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eduardo', '', 'Marquina');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (40, 41);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Agustín', '', 'Moreto');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (41, 42);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Enrique', '', 'Laguerre');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (42, 44);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (42, 142);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Coquel', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (43, 45);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Anton', '', 'Chejov');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 46);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 47);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 53);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 66);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 103);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 139);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 158);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 220);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 270);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (44, 340);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('George', '', 'Kaiser');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (45, 48);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Pedro', 'Calderón', 'de la Barca');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 49);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 65);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 74);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 170);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 382);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 404);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 432);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (46, 437);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Luiggi', '', 'Pirandello');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (47, 50);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (47, 80);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (47, 114);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (47, 136);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (47, 289);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'de Cervantes Saavedra');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 52);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 56);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 95);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 97);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 178);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 183);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 184);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 185);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 186);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 187);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 344);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 348);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 367);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 368);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 376);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 377);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 385);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 386);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 387);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 395);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 396);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 397);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 462);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (48, 463);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Molière', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (49, 54);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (49, 63);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (49, 132);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (49, 154);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (49, 350);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (49, 351);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Maeterlinck', '', 'Maurice');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (50, 55);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (50, 81);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (50, 120);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Henrik', '', 'Ibsen');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (51, 57);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (51, 313);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('José', '', 'Zorrilla');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (52, 58);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jean', '', 'Anouilh');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (53, 59);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (53, 85);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eurípides', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 60);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 64);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 143);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 169);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 286);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 297);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (54, 328);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('William', '', 'Shakespeare');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 61);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 76);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 84);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 126);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 198);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 285);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 295);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 324);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 375);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 421);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 445);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 459);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 460);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (55, 472);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('H.', '', 'Lenormand');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (56, 62);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlo', '', 'Goldoni');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (57, 68);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (57, 356);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (57, 371);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (57, 405);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (57, 427);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (57, 454);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Elizabeth', '', 'Gooyear');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (58, 69);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Philipp', '', 'Huston');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (59, 69);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('W.', '', 'Saroyan');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (60, 70);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('J.M.', '', 'Synge');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (61, 71);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('A.', '', 'Salacrou');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (62, 72);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Bernard', '', 'Shaw');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (63, 75);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (63, 77);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (63, 88);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Lope', '', 'de Vega');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 79);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 113);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 152);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 176);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 255);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 279);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 299);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 374);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 379);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 383);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 389);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 399);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 414);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 424);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 435);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 452);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 453);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (64, 464);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Tennessee', '', 'Williams');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (65, 82);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (65, 147);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (65, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Elmer', '', 'Rice');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (66, 83);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Gabriele', '', "D'Annunzio");
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (67, 87);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Max', '', 'Aub');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (68, 89);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (68, 116);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (68, 117);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Emilio', 'S.', 'Belaval');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (69, 90);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (69, 159);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Albert', '', 'Camus');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (70, 92);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (70, 109);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (70, 326);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (70, 362);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Fernando', '', 'de Rojas');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (71, 93);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (71, 111);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (71, 365);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (71, 380);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (71, 434);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Lope', '', 'de Rueda');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (72, 96);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (72, 342);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (72, 343);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (72, 346);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (72, 347);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (72, 461);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jean', '', 'Giraudoux');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (73, 98);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (73, 134);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jean', '', 'Cocteau');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (74, 99);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Thorton', '', 'Wilder');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (75, 100);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Goroztiza');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (76, 101);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Piri', '', 'Fernández');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (77, 102);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Salvador', '', 'Brau');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (78, 104);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (78, 137);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (78, 294);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Sófocles', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (79, 105);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (79, 281);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (79, 394);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (79, 431);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Anónimo', 'inglés', 'del Siglo XV');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (80, 106);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (80, 107);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jean', 'Paul', 'Sartre');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (81, 108);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (81, 363);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'de Unamuno');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (82, 110);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (82, 364);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Manuel', '', 'Ruela');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (83, 115);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Anónimo', 'francés', 'del Siglo XV');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (84, 118);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (84, 349);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (84, 352);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (84, 373);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (84, 401);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', 'Ramón', 'Jiménez');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (85, 119);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (85, 133);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (85, 302);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (85, 458);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (85, 465);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('M.', '', 'de Ghelderode');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (86, 121);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Samuel', '', 'Beckett');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (87, 122);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('August', '', 'Strindberg');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (88, 124);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (88, 413);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Angel', '', 'Amaro');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (89, 125);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Nicolai', '', 'Andriev');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (90, 127);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Bertolt', '', 'Brecht');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (91, 129);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (91, 155);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (91, 164);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (91, 195);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (91, 280);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Anatole', '', 'de France');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (92, 130);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (92, 370);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Paul', '', 'Arene');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (93, 131);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Antonio', 'Buero', 'Vallejo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (94, 135);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (94, 231);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('René', '', 'Marqués');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (95, 137);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (95, 182);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Vito', '', 'Martini');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (96, 138);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Georges', '', 'Bernanos');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (97, 140);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Máximo', '', 'Gorki');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (98, 141);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (98, 273);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Alfred', '', 'Jarry');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (99, 144);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Solórzano');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (100, 145);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Maricusa', '', 'Ornés');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (101, 146);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (101, 153);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Gilda', '', 'Navarra');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (102, 146);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Isaac', '', 'Chocrón');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (103, 148);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (103, 165);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Plauto', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (104, 149);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (104, 197);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (104, 331);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (104, 430);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Maggi');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (105, 151);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Kurt', '', 'Weill');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (106, 155);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ariano', '', 'Suasuna');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (107, 156);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('H.', 'Christian', 'Anderson');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (108, 160);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Emilio', '', 'Carballido');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (109, 161);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (109, 433);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (109, 444);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (109, 467);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Gerard', 'Paul', 'Marín');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (110, 166);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (110, 296);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (110, 442);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Tirso', '', 'de Molina');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 167);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 192);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 196);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 271);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 358);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 381);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 388);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 391);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 440);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (111, 446);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', '', 'Alberti');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (112, 168);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Enrique', '', 'Buenaventura');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (113, 171);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (113, 172);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eduardo', '', 'Pavlovsky');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (114, 173);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Abniel', '', 'Marat');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (115, 174);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (115, 190);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (115, 219);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Roberto', 'Ramos', 'Perea');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (116, 175);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Luis', '', 'de Benavente');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (117, 177);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Arthur', '', 'Miller');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (118, 179);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (118, 411);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (118, 466);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Charles', '', 'Dickens');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (119, 180);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (119, 188);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (119, 300);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Anónimo', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (120, 181);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (120, 449);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (120, 455);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Joey', '', 'Rivas');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (121, 189);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Tere', '', 'Marichal');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (122, 191);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Allan', '', 'Culler');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (123, 193);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('W.', '', 'Rusell');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (124, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Nelson', '', 'Rivera');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (125, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Comedia', '', 'del Arte');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (126, 194);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (126, 203);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('L.', '', 'de Burgo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (127, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('E.', '', 'Rice');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (128, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eugene', '', 'Ionesco');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (129, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('W.', '', 'Soroyan');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (130, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Neil', '', 'Simon');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (131, 194);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Luis', 'Ramos Escobar');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 200);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 221);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 249);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 282);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 290);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 312);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 334);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 406);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 412);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 429);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (132, 443);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Fernando', '', 'Peñuela');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (133, 201);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (133, 415);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eugeny', '', 'Schwart');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (134, 202);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Isadora', '', 'Aguirre');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (135, 204);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Wole', '', 'Soyinka');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (136, 205);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'L.', 'González');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (137, 206);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Edmond', '', 'Rostand');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (138, 207);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', '', 'Macande');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (139, 208);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', 'Carlos', 'Gené');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (140, 209);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eduardo', '', 'Pavloski');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (141, 210);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Richard', '', 'Irizarry');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (142, 211);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Marco', 'Antonio', 'de la Parra');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (143, 212);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (143, 266);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Creación', '', 'Colectiva');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (144, 213);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (144, 214);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Blum');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (145, 215);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Moncho', '', 'Conde');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (146, 216);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Pedro', '', 'Santaliz');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (147, 217);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (147, 252);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Zora', '', 'Moreno');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (148, 218);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (148, 248);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Paloma', '', 'Pedrero');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (149, 222);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (149, 223);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Mario', '', 'Benedetti');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (150, 224);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jairo', 'Aníbal', 'Nino');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (151, 225);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Mario', '', 'Colón');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (152, 226);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Adriana', '', 'Pantoja');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (153, 227);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (153, 228);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (153, 265);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('A.', 'García', 'del Toro');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (154, 229);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Pedro', '', 'Salinas');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (155, 230);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Sergio', '', 'Arrau');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (156, 232);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (156, 258);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Alejandro', 'Tapia', 'y Rivera');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (157, 233);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('COLECTIVO', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (158, 234);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Collodi');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (159, 237);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Franklin', '', 'Caicedo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (160, 238);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Francisco', 'Framil', 'Durán');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (161, 239);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Darío', '', 'Fo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (162, 240);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Colectivo', '', 'de Carlos Gorostijo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (163, 241);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rubén', 'Yáñez', 'Alonso');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (164, 241);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Frasco');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (165, 241);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Oscar', '', 'Vicele');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (166, 242);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ulen', '', 'Spigel');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (167, 243);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Sandra', '', 'Tejos');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (168, 244);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Alejandro', '', 'Tosatti');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (169, 244);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Coralez');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (170, 245);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Colectivo', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (171, 246);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (171, 451);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Senel', '', 'Paz');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (172, 247);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Costa', '', 'Palamides');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (173, 250);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('William', '', 'Luce');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (174, 251);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Brunilda', '', 'García');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (175, 253);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Victor', '', 'Hugo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (176, 254);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Myrna', '', 'Casas');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (177, 256);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'Diffoot');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (178, 257);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Aravind', '', 'Adyantaya');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (179, 259);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Frank', '', 'Kafkha');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (180, 261);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('adptación', '', 'de Gilda Navarra');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (181, 262);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Guillermo', '', 'Schnidthuber');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (182, 263);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rodolfo', '', 'Santana');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (183, 264);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Enrique', 'Pineda', 'Bernet');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (184, 267);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Freddy', '', 'Acevedo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (185, 274);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', '', 'Rojas');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (186, 275);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Joselo', '', 'Arroyo');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (187, 276);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jelka', '', 'Duchesne');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (188, 277);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Modesto', '', 'Lacén');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (189, 278);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jane', '', 'Martin');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (190, 287);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Lee', '', 'Blessing');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (191, 288);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('William', 'Shakespeare', 'versión de Pablo Neruda');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (192, 292);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Idalia', 'Pérez', 'Garay');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (193, 293);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'Vando');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (194, 293);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (194, 332);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Manuel', 'Zeno', 'Gandía');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (195, 301);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Esquilo', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (196, 303);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Katherine', '', 'Snodgrass');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (197, 304);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Murilo', 'Dias', 'César');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (198, 305);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('José', '', 'Rivera');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (199, 306);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Arístides', '', 'Vargas');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (200, 308);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (200, 336);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (200, 425);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Alberto', '', 'Miralles');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (201, 310);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Sanchis', 'Sinisterra');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (202, 311);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Martin', '', 'McDonogh');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (203, 314);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Migdalia', '', 'Cruz');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (204, 315);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Irene', 'Fornés');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (205, 315);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Flaminio', '', 'Scala');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (206, 316);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (206, 456);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ariel', '', 'Dorfman');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (207, 317);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eugène', '', 'Ionesco');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (208, 318);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (208, 402);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Gonzalo', 'Arocho', 'del Toro');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (209, 319);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Williiam', '', 'Shakespeare');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (210, 320);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jean', '', 'Genet');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (211, 321);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (211, 403);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (211, 468);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('argumento', '', "de los estudiantes del curso de Commedia dell'arte");
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (212, 322);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Sophie', '', 'Treadwell');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (213, 323);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Roy', '', 'Williams');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (214, 325);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Diana', '', 'Son');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (215, 327);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Heriberto', '', 'Feliciano');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (216, 329);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Sergi', '', 'Belbel');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (217, 330);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Edwin', '', 'Sánchez');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (218, 333);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Textos', '', 'de Samuel Beckett');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (219, 335);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Sylvia', '', 'Bofill');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (220, 337);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rosabel', '', 'Otón');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (221, 338);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Dorcas', '', 'Ruttenberg');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (222, 354);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', 'Méndez', 'Quiñones');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (223, 359);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Kalman', '', 'Barsi');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (224, 384);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('J.', 'Sánchez', 'del Río');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (225, 392);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', '', 'Escalona');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (226, 393);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ignacio', 'García', 'May');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (227, 398);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Jean', 'Claude', 'Carrière');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (228, 400);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Oscar', '', 'Viale');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (229, 407);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Manuel', 'Alonso', 'Pizarro');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (230, 408);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (230, 409);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (230, 441);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (230, 471);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (230, 476);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Ana', 'Lydia', 'Vega');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (231, 416);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Magaly', 'García', 'Ramis');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (232, 417);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Mayra', '', 'Santos');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (233, 418);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Kalman', '', 'Barsy');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (234, 419);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Antonio', '', 'Martorell');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (235, 420);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Eduardo', '', 'Rovner');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (236, 422);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Mauricio', '', 'Kartun');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (237, 423);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Cristina', '', 'Escofet');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (238, 426);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Balad', '', 'Sircer');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (239, 428);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Luisa', 'Josefina', 'Hernández');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (240, 433);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (240, 444);
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (240, 467);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Osvaldo', '', 'Dragún');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (241, 436);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Maximo', '', 'Gorki');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (242, 438);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Moisés', '', 'Kaufman');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (243, 439);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Arcipreste', '', 'de Hita');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (244, 469);
+
+INSERT INTO Autores (primer_nombre, segundo_nombre, apellido) VALUES ('Maquiavelo', '', 'N/A');
+
+INSERT INTO Autores_de_Obras (autor_id, obra_id) VALUES (245, 470);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Luis', 'Marrero');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (1, 2);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Ángel', 'Díaz');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (2, 4);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Mercedes', 'Serbia de Caro');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (3, 5);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Serbia', 'de Caro');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (4, 6);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Jaime', '', 'Arbona');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (5, 7);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (5, 8);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Francisco', '', 'Pizarro');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (6, 7);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (6, 8);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Marichal');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 9);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 10);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 11);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 12);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 13);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 14);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 61);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 62);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 63);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 64);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 65);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 68);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 79);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 80);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 81);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (7, 82);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', 'Cruz', 'Eméric');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 15);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 16);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 19);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 24);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 25);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 26);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 28);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 29);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (8, 32);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Luis', 'A.', 'Maisonet');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 17);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 18);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 20);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 21);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 22);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 78);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (9, 350);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Myrna', '', 'Casas');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (10, 23);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (10, 27);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (10, 130);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (10, 148);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (10, 355);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (10, 360);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Victoria', '', 'Espinosa');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (11, 30);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Eusebio', '', 'Morales');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (12, 31);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (12, 95);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (12, 112);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Edgardo', '', 'Franceschini');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (13, 33);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Leopoldo', 'Santiago', 'Lavandero');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 34);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 35);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 36);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 37);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 38);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 39);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 40);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 41);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 42);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 43);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 44);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 45);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 46);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 47);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 48);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 49);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 51);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 52);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 53);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 57);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 58);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 339);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (14, 340);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Melvin', '', 'Buckner');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (15, 50);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (15, 54);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Esteban', '', 'Vicente');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (16, 55);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (16, 56);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Luisa', 'C.', 'Schajowicz');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (17, 59);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (17, 60);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (17, 74);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', 'Cruz', 'Emeric');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 66);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 67);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 69);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 70);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 71);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 72);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 73);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 83);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 84);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 85);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 86);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 87);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 88);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 89);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 90);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 91);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 92);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 93);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 94);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 95);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 100);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 101);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 102);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 103);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 104);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 105);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 106);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 107);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 108);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 109);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 110);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 111);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 113);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 120);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 121);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 122);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 123);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 124);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 125);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 126);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 127);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 128);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 129);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 132);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 134);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 135);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 138);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 139);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 141);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 142);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 143);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 144);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 145);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 151);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 152);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 153);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 154);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 155);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 341);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 342);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 343);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 344);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 345);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 346);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 347);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 349);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 351);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 352);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 353);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 354);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 356);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 357);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 358);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 359);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 361);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 366);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 367);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 368);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 369);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 370);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 374);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 375);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 376);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 377);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 378);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 379);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 380);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (18, 447);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Ariel', '', 'Baliff');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (19, 75);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (19, 76);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (19, 77);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Gloria', '', 'Arjona');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (20, 96);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (20, 97);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Edwin', 'Silva', 'Marini');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (21, 98);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (21, 99);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (21, 116);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (21, 117);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (21, 118);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (21, 147);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Luis', '', 'Acevedo');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (22, 114);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (22, 115);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Eurípides', '', 'Ríos');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (23, 131);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Dean', '', 'Zayas');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (24, 136);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (24, 328);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'Salve');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (25, 136);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Otto', 'Fajardo', 'Bey');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (26, 140);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Myriam', '', 'Torres');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (27, 146);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Yossy', '', 'Márquez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (28, 149);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Alfonso', 'Ramos', 'Ramos');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (29, 150);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Fernando', '', 'Rivero');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 156);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 157);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 158);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 159);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 160);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 161);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 163);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (30, 164);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Checo', 'Cuevas');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 162);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 168);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 180);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 181);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 182);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 183);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 184);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 185);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 186);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 187);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 188);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 192);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 193);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 195);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 196);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 197);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 198);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 199);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 200);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 201);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 202);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 203);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 205);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 220);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 221);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 229);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 230);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 231);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 233);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 234);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 254);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 260);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 270);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 271);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 272);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 273);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 281);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 282);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 285);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 286);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 289);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 290);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 292);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 294);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 295);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 296);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 297);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 298);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 300);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 306);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 313);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 315);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 316);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 319);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 322);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 323);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 385);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 386);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 387);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 388);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 389);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 390);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 391);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 392);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 393);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 394);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 395);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 396);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 397);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 398);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 399);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 401);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 402);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 403);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 404);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 405);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 406);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 407);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 408);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 409);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 410);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 411);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 413);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 414);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 415);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 416);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 417);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 418);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 419);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 420);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 421);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 422);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 423);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 424);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 425);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 426);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 428);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 430);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 431);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 432);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 433);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 434);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 435);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 436);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 437);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 438);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 439);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 440);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 441);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 442);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 443);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 444);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 445);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 446);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 451);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 455);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (31, 456);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Carmiña', '', 'Bouet');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 166);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 169);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 170);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 176);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 177);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 178);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 179);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 382);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (32, 383);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Nina', '', 'Lejet');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (33, 167);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (33, 381);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Félix', 'Gómez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (34, 171);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (34, 172);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Idalia', 'Pérez', 'Garay');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (35, 173);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'M.', 'Lacomba');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (36, 175);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Astrid', '', 'López');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (37, 189);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Colectivo', '', 'N/A');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 190);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 204);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 224);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 225);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 226);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 256);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 258);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (38, 259);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Abniel', '', 'Marat');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (39, 191);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Héctor', '', 'Téllez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (40, 206);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'Pareja');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (41, 207);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Paco', '', 'de Belén');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (42, 208);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Mario', '', 'Colón');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (43, 222);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (43, 223);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Julio', '', 'Ramos');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (44, 227);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (44, 228);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Jorge', '', 'Vázquez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (45, 227);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (45, 228);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Mariano', '', 'Montoya');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (46, 255);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'Vando');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 257);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 279);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 303);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 307);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 309);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 310);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 311);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 312);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 317);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 320);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 448);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 452);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 453);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (47, 454);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Teófilo', '', 'Torres');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (48, 261);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Román', '', 'Salas');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (49, 268);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (49, 269);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (49, 373);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Ricardo', '', 'Soto');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (50, 280);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Gustavo', '', 'Castrodad');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (51, 280);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('José', '', 'Cotté');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (52, 280);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Ariel', '', 'Cuevas');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (53, 287);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (53, 326);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (53, 328);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Víctor', 'M.', 'Castillo');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (54, 287);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Aula', '', 'de Teatro de la Universidad de Murcia');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (55, 299);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Concepción', '', 'González');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (56, 301);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Gabriel', '', 'Soto');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (57, 302);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Nelson', '', 'de León');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (58, 304);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (58, 305);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Jorge', '', 'Rodulfo');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (59, 314);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', 'Augusto', 'Montijo');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (60, 318);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Andrés', 'López', 'Alicea');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (61, 321);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Karla', '', 'Santiago');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (62, 323);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (62, 332);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (62, 333);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('René', '', 'Duchesne');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (63, 323);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Israel', '', 'Franco-Müller');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 324);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 325);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 326);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 449);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 450);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 457);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 458);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 459);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 460);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 461);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 462);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 463);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 464);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 465);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 467);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 469);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 470);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 471);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 472);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 473);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 474);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 475);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (64, 476);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Irene', 'Fajardo', 'Neddermann');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (65, 325);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Luis', 'Daniel', 'Vázquez Rivera');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (66, 325);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Nitza', 'Ayala', 'Fontánez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (67, 325);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Enid', '', 'Soto');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (68, 325);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Kiara', '', 'de Santiago');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (69, 327);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (69, 332);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Heriberto', '', 'Feliciano');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (70, 329);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (70, 330);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Nicolás', '', 'Luzzi');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (71, 331);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (71, 334);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (71, 336);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (71, 337);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (71, 466);
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (71, 468);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Kiara', 'M.', 'De Santiago Cruz');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (72, 335);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Cipriano', 'Rivas', 'Cherif');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (73, 348);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Myrna', '', 'Maurás');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (74, 371);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Alfonso', '', 'Ramos');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (75, 372);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Oscar', '', 'Mestey');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (76, 384);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Antonio', '', 'Martorell');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (77, 400);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('El', 'Roble', 'Escénico');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (78, 412);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Ricardo', '', 'Álvarez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (79, 427);
+
+INSERT INTO Diseñadores_de_Escenografia (primer_nombre, segundo_nombre, apellido) VALUES ('Orlando', '', 'Rodríguez');
+
+INSERT INTO Diseño_de_Escenografia (d_id, obra_id) VALUES (80, 468);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Marichal');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 7);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 8);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 9);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 10);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 11);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 12);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 13);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (1, 14);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', 'Cruz', 'Eméric');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 15);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 16);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 17);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 18);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 19);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 20);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 21);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 25);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 26);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 28);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 29);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (2, 33);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Luis', 'A.', 'Maisonet');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (3, 22);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (3, 78);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Edwin', 'Silva', 'Marini');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 23);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 24);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 27);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 128);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 148);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 150);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (4, 177);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Eusebio', '', 'Morales');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (5, 30);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (5, 31);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Myrna', '', 'Casas');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (6, 32);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Tharon', '', 'Musser');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (7, 75);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (7, 76);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (7, 77);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Daniel', '', 'Manzano');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (8, 114);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (8, 115);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (8, 146);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Alfonso', '', 'Ramos');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (9, 158);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Toni', '', 'Fernández');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 166);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 302);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 303);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 307);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 309);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 310);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 317);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 405);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 406);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 407);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 408);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 409);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 410);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 411);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 426);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 431);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 449);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 450);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 453);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (10, 454);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Efraín', 'Piñeiro', 'Díaz');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (11, 174);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('José', 'Checo', 'Cuevas');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 183);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 184);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 185);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 186);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 187);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 199);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 234);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 282);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 285);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 286);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 289);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 290);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 292);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 294);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 295);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 296);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 297);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 298);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 300);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 306);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 313);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 315);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 316);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 319);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 389);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 390);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 391);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 392);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 393);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 394);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 398);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 399);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 401);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 402);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 403);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 404);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 413);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 414);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 415);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 416);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 417);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 418);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 419);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 420);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 421);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 422);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 423);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 424);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 425);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 427);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 428);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 430);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 432);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 433);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 434);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 435);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 436);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 437);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 438);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 439);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 440);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 441);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 442);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 443);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 444);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 445);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 446);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 447);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 451);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 455);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (12, 456);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Colectivo', '', 'N/A');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (13, 204);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'Pareja');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (14, 207);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Alberto', '', 'Segarra');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (15, 287);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Tamara', '', 'Walker');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (16, 293);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Emilio', '', 'Ayala');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (17, 299);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Concepción', '', 'González');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (18, 301);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Jorge', '', 'Ríos');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (19, 304);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (19, 305);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (19, 448);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Milton', '', 'Cordero');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (20, 311);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Leonardo', '', 'Aguilú');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (21, 312);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Manuel', '', 'Ramírez');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (22, 314);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (22, 318);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (22, 320);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (22, 321);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Cheryl', '', 'Robles');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (23, 322);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (23, 323);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Víctor', '', 'Colón');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (24, 324);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (24, 466);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Israel', '', 'Franco-Müller');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 325);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 327);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 328);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 329);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 331);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 334);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 336);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 337);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 457);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 458);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 459);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 460);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 461);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 462);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 463);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 464);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 465);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (25, 469);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Víctor', 'Geraldo', 'Colón');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (26, 326);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (26, 330);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Brian', '', 'Vargas');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (27, 332);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Javier', 'A.', 'Moreno');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (28, 333);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Victor', 'G.', 'Colón Rodríguez');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (29, 335);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Elvin', 'Omar', 'Morales');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (30, 338);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Taller', '', 'de Teatro Experimental El Roble Escénico');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (31, 412);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Rafael', '', 'González');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (32, 448);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Teatro', 'Rodante', 'UPR');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (33, 452);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Aula', '', 'de Teatro Universidad de Murcia');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (34, 452);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Brendalee', '', 'Morales');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (35, 466);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (35, 468);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Nicolas', '', 'Luzzi');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 467);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 470);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 471);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 472);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 473);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 474);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 475);
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (36, 476);
+
+INSERT INTO Diseñadores_de_Luces (primer_nombre, segundo_nombre, apellido) VALUES ('Nicolás', '', 'Luzzi');
+
+INSERT INTO Diseño_de_Luces (d_id, obra_id) VALUES (37, 468);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Mercedes', 'Serbiá de Caro');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (1, 2);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Helen', 'E.', 'Sackett');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 4);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 11);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 12);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 15);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 16);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 20);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 21);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 25);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 30);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 32);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 33);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 55);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 56);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 57);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 58);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 59);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 60);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 61);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 62);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 63);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 64);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 65);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 66);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 67);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 69);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 71);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 72);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 73);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 74);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 79);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 80);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 81);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 82);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 83);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 84);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 85);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 86);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 87);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 88);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 89);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 90);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 91);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 92);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 93);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 95);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 96);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 97);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 98);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 99);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 100);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 101);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 102);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 103);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 104);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 105);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 106);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 107);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 108);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 109);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 111);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 113);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 120);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 121);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 122);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 123);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 124);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 126);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 127);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 128);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 129);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 131);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 132);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 134);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 135);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 136);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 138);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 139);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 140);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 141);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 142);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 143);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 144);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 341);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 345);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 346);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 347);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 349);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 351);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 353);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 354);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 356);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 357);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 359);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 361);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 362);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 363);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 364);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 365);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 366);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 367);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 368);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 369);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 370);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 371);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 372);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 373);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 375);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (2, 382);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Mercedes', 'Serbia de Caro');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (3, 5);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Serbia', 'de Caro');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (4, 6);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Victoria', '', 'Espinosa');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 7);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 8);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 70);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 78);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 342);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 343);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 344);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (5, 352);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', '', 'Marichal');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 9);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 10);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 13);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 14);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 17);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 18);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 19);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (6, 350);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Myrna', '', 'Casas');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 22);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 23);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 24);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 26);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 27);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 28);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 29);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 94);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 116);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 117);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 118);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 130);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 148);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 355);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 358);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (7, 360);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Ruth', 'Minerva', 'López de Ruiz');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (8, 31);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Leopoldo', 'Santiago', 'Lavandero');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 34);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 35);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 36);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 37);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 38);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 39);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 40);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 41);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 42);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 43);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 44);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 45);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 46);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 47);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 48);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 49);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 51);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 52);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 53);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 339);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (9, 340);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Melvin', '', 'Bucker');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (10, 50);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (10, 54);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Ariel', '', 'Baliff');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (11, 75);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (11, 76);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (11, 77);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Ruth', 'Minerva', 'López');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (12, 95);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (12, 96);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (12, 97);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Ruth', 'M.', 'López');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (13, 110);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (13, 112);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Nilda', '', 'Dávila');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (14, 125);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Idalia', 'Pérez', 'Garay');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (15, 147);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (15, 153);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (15, 374);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (15, 376);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (15, 377);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (15, 378);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Fernando', '', 'Rivero');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (16, 149);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Gloria', '', 'Sáez');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 149);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 150);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 152);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 156);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 157);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 158);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 159);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 160);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 161);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 162);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 163);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 164);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 166);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 167);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 168);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 169);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 170);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 171);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 172);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 173);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 176);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 177);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 178);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 179);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 180);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 181);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 182);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 183);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 184);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 185);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 186);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 187);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 188);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 192);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 195);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 196);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 197);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 198);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 199);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 200);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 201);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 202);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 203);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 205);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 220);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 221);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 222);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 223);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 229);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 230);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 231);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 233);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 254);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 260);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 270);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 271);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 272);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 273);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 279);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 379);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 380);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 385);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 386);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 387);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 388);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 389);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 390);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 391);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 392);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 393);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 394);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 395);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 396);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 397);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 398);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 399);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 401);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 402);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 403);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 404);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 405);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 406);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 407);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 408);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 409);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 410);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 411);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 413);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 414);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 415);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 416);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 417);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 418);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 419);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 420);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 421);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 422);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 423);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 424);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 425);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 426);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 428);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (17, 450);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Abniel', '', 'Morales');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (18, 174);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Glenn', '', 'Zayas');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (19, 174);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Philip', '', 'Pagán');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (20, 189);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Colectivo', '', 'N/A');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 190);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 191);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 204);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 224);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 225);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 226);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 256);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 258);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (21, 259);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Carmelo', '', 'Santana');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (22, 193);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Héctor', '', 'Téllez');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (23, 206);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Ramón', '', 'Pareja');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (24, 207);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Adriana', '', 'Pantoja');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (25, 227);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (25, 228);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Teatro', 'Universitario', 'de Murcia');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (26, 255);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Miguel', '', 'Vando');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 257);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 281);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 285);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 286);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 287);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 288);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 289);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 290);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 292);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 293);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 294);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 295);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 296);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 297);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 298);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 300);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 303);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 307);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 309);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 310);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 311);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 312);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 313);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 316);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 317);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 319);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 320);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 321);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 322);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 323);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 324);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 325);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 326);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 328);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 331);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 334);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 335);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 336);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 337);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 338);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 430);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 431);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 432);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 433);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 434);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 435);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 436);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 437);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 438);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 439);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 440);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 441);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 442);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 443);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 444);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 445);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 446);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 447);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 448);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 449);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 451);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 452);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 453);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 454);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 455);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 456);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 457);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 459);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 460);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 461);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 462);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 463);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 464);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 466);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 467);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 468);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 469);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 470);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 471);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 472);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 473);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 474);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 475);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (27, 476);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Teófilo', '', 'Torres');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (28, 261);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Gloria', 'Sáez', 'y Victoria Espinosa');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (29, 269);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Maram', 'Yely', 'Rivera');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (30, 280);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Aula', '', 'de Teatro de la Universitario de Murcia');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (31, 299);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Gabriel', '', 'Soto');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (32, 302);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (32, 458);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (32, 465);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('María', 'Magdalena', 'Ramírez');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (33, 304);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (33, 305);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Juan', 'Carlos', 'Ríos');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (34, 306);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Noelia', '', 'Montero');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (35, 314);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Daisy', '', 'Sánchez');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (36, 315);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Carlos', 'Augusto', 'Montijo');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (37, 318);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Frances', '', 'Arroyo');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (38, 327);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (38, 332);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Elenco', '', 'N/A');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (39, 329);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (39, 330);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Marjorie', '', 'Ocasio');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (40, 333);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Cipriano', 'Rivas', 'Cherif');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (41, 348);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Nina', '', 'Lejet');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (42, 381);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Rosa', 'Luisa', 'Márquez');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (43, 384);
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (43, 400);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('El', 'Roble', 'Escénico');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (44, 412);
+
+INSERT INTO Diseñadores_de_Vestuario (primer_nombre, segundo_nombre, apellido) VALUES ('Vilma', '', 'Martínez');
+
+INSERT INTO Diseño_de_Vestuario (d_id, obra_id) VALUES (45, 427);
+
