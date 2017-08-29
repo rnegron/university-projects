@@ -1,0 +1,14 @@
+El enlace a la aplicación: http://ada.uprrp.edu/~raul.negron3/
+
+Consiste en una busqueda sencilla dentro de una base de datos relacionada al departamento
+de Drama de la UPRRP. Los datos consisten en información sobre las distintas obras catalogadas.
+La información fué provista por el Sr. José A. Robledo González, director
+del Seminario Multidisciplinario de Información y Documentación José Emilio González de la Facultad
+de Humanidades (http://smjegupr.net/).
+
+La aplicación permite al usuario buscar obras por: Título, Año, Director, Autor, Diseñador de Luces,
+Diseñador de Vestuario o Diseñador de Escenografía. Además, permite escoger cuales columnas
+van a ser mostradas en la tabla producida. La tabla en sí puede ser reorganizada por sus columnas
+en orden alfabético o numérico. Originalmente, todo estos datos estaban dentro de 3 archivos formato
+Excel. La aplicación desarollada permite un interface más intuitivo y accesible a la información,
+además de las ventajas otorgadas por la transición hacia una base de datos relacional.

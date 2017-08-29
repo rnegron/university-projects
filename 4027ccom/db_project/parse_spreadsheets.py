@@ -1,6 +1,6 @@
-# Raúl Negrón
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
+import os
 import openpyxl
 
 # Dictionary for the Obras table columns
@@ -303,9 +303,9 @@ def make_database(t1, t2, t3):
 
 if __name__ == '__main__':
     # Retrieve and parse preliminary data from the spreadsheets
-    comedieta = table_parse('comedieta.xlsx')
-    universitario = table_parse('universitario.xlsx')
-    rodante = table_parse('rodante.xlsx')
+    comedieta = table_parse(os.path.join('excel', 'comedieta.xlsx'))
+    universitario = table_parse(os.path.join('excel', 'universitario.xlsx'))
+    rodante = table_parse(os.path.join('excel', 'rodante.xlsx'))
 
     # Fix the data and write it to a file in MySQL format
     make_database(comedieta, universitario, rodante)

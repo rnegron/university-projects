@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Raúl Negrón's Academic Website</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap4.min.css" />
+
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Página Principal <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron" id="jumbo">
+        <h1>Seminario Multidisciplinario de Información y Documentación José Emilio González </h1>
+            <br><br>
+            <form class="form-horizontal" id="dbform" method="POST">
+                <div id="radios" class="form-group">
+                    Buscar obras por: <br />
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio1" checked="checked" value="titulo"> Título
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio2" value="year"> Año
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio3" value="director"> Director
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio4" value="autor"> Autor
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio5" value="luces"> Diseñador de Luces
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio6" value="escena"> Diseñador de Escenografía
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="searchOptions" id="inlineRadio7" value="vestido"> Diseñador de Vestuario
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" maxlength="1024" class="form-control" id="term" name="term">
+                </div>
+                <div id="checkboxes" class="form-group">
+                    Mostrar:  <br />
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox1" checked="" value="titulo"> Título
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox2" value="caja"> Caja
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox3" value="nombre_teatro"> Teatro
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox4" value="year"> Año
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox5" value="num_de_prod"> Número de Producción
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox6" value="notas"> Notas
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox7" value="director"> Director
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox8" value="autor"> Autor
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox9" value="luces"> Diseñador de Luces
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox10" value="escena"> Diseñador de Escenografía
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="showOptions[]" id="inlineCheckbox11" value="vestido"> Diseñador de Vestuario
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Buscar</button>
+                </div>
+                </form>
+
+
+      </div>
+
+      <div id="results">
+
+      </div>
+
+      <footer class="footer" style=" padding-top: 1.5rem; color: #777; border-top: .05rem solid #e5e5e5;">
+          <p>Un proyecto de CCOM4027 - Introducción al Manejo de Datos</p>
+      </footer>
+
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/database.js" type='text/javascript'></script>
+    <script>
+        $('.checkbox-inline').css("margin-right", ".3rem");
+        $('.radio-inline').css("margin-right", ".3rem");
+    </script>
+  </body>
+</html>
